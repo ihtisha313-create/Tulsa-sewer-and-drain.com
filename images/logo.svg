@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" aria-label="Tulsa Sewer and Drain logo">
+  <circle cx="32" cy="32" r="30" fill="#1a3a5c"/>
+  <path d="M16 22 Q16 18 20 18 L44 18 Q48 18 48 22 L48 30 Q48 34 44 34 L36 34 L36 44 Q36 48 32 48 Q28 48 28 44 L28 34 L20 34 Q16 34 16 30 Z" fill="#e8640a"/>
+  <circle cx="22" cy="42" r="3" fill="#f6ad55"/>
+  <circle cx="42" cy="42" r="3" fill="#f6ad55"/>
+</svg>
