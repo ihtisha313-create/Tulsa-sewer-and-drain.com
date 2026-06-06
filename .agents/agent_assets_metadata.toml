@@ -66,3 +66,21 @@ id = "8vexvht9VW2vxVJPLt7aR"
 uri = "file://attached_assets/generated_images/friendly_approachable_american_male_40b9.png"
 type = "image"
 title = "generated_image"
+
+[[generated]]
+id = "EuWWCkp-28TlwxGXKsIR3"
+uri = "file://images/drain-cleaning-service.png"
+type = "image"
+title = "drain cleaning service"
+
+[[generated]]
+id = "d-Wo0fB_lQDQlipBbPEy-"
+uri = "file://images/slab-leak-repair.png"
+type = "image"
+title = "slab leak repair detection"
+
+[[generated]]
+id = "CtcqPi2SOL4jLjvx4hKV3"
+uri = "file://images/leak-detection-service.png"
+type = "image"
+title = "leak detection service"
