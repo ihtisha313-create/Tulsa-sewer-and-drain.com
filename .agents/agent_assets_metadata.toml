@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "J_Fc__GA9TsRIo_6yAfMV"
+uri = "file://attached_assets/generated_images/professional_licensed_plumber_in_e3a6.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "9dbVlYnuT7iMEssnw_9C6"
+uri = "file://attached_assets/generated_images/plumber_technician_kneeling_beside_0925.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "sC2GZA8BC39hhHNovDvNd"
+uri = "file://attached_assets/generated_images/close_up_cross_section_2e9b.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "5mB0sNHJi0EbfcmccndI8"
+uri = "file://attached_assets/generated_images/excavated_cracked_orange_vitrified_8c29.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "uc2gwVjKtxdx25aCPi9ZU"
+uri = "file://attached_assets/generated_images/licensed_plumber_in_navy_bd8c.png"
+type = "image"
+title = "generated_image"
