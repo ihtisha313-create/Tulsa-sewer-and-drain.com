@@ -1,0 +1,26 @@
+IMAGE 1 — Hero Section
+Generate: Professional licensed plumber in navy blue uniform standing confidently in front of a clean white service van, residential Oklahoma neighborhood in background, mature oak trees visible, sunny day, photorealistic, wide shot, commercial photography style, trust-inspiring
+Save as: /images/hero-plumber-truck.jpg
+Place: In the hero section, after the hero text content, before the closing </section> tag, inside a <div class="hero-image"> wrapper
+
+IMAGE 2 — Sewer Camera Inspection service card
+Generate: Plumber technician kneeling beside a residential cleanout pipe holding professional sewer camera equipment, portable monitor showing live pipe interior footage, suburban backyard setting, focused professional expression, photorealistic, natural daylight, commercial photography
+Save as: /images/sewer-camera-inspection.jpg
+Place: Inside the Sewer Camera Inspection H3 service card, after the description paragraph
+
+IMAGE 3 — Aggressive Tree Root Systems subsection
+Generate: Close-up cross-section view of underground sewer pipe showing thick tree root intrusion filling the pipe interior, red clay soil visible around the pipe, dramatic lighting showing severity of root damage, photorealistic, educational diagnostic photo style
+Save as: /images/root-intrusion-pipe.jpg
+Place: In the "Aggressive Tree Root Systems" H3 subsection inside "Why Tulsa Homes" section, after the paragraph text
+
+IMAGE 4 — Aging Pipe Materials subsection
+Generate: Excavated cracked orange vitrified clay sewer pipe from a 1960s home, visible cracks and joint separation, red clay soil surrounding the pipe, professional plumbing inspection photo, close-up detail shot, natural lighting, photorealistic
+Save as: /images/cracked-clay-pipe.jpg
+Place: In the "Aging Pipe Materials" H3 subsection inside "Why Tulsa Homes" section, after the paragraph text
+
+IMAGE 5 — What Makes Us Different section
+Generate: Licensed plumber in uniform showing a homeowner live sewer camera inspection footage on a tablet screen, standing in a residential home entryway, homeowner looking at screen with understanding, warm indoor lighting, trust and transparency conveyed, photorealistic, commercial photography style
+Save as: /images/plumber-homeowner-tablet.jpg
+Place: In the "What Makes Us Different" section, before the bullet list
+
+All images should be width="600" height="400" with loading="lazy", except Image 1 which should be width="800" height="500" with loading="eager". After placing all images, show me a preview of each section so I can verify.
