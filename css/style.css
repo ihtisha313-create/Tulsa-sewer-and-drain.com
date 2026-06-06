@@ -630,3 +630,25 @@ html, body { overflow-x:hidden; }
 
   .area-pill { padding:9px 16px; font-size:.9rem; }
 }
+
+/* Branded image watermark overlay */
+.branded-img {
+  position: relative;
+  display: block;
+}
+.branded-img::after {
+  content: "tulsaseweranddrain.com";
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  font-size: 0.72rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  color: rgba(255,255,255,0.92);
+  background: rgba(26,58,92,0.62);
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  user-select: none;
+}

@@ -71,16 +71,58 @@ title = "generated_image"
 id = "EuWWCkp-28TlwxGXKsIR3"
 uri = "file://images/drain-cleaning-service.png"
 type = "image"
-title = "drain cleaning service"
+title = "drain cleaning cable machine"
 
 [[generated]]
 id = "d-Wo0fB_lQDQlipBbPEy-"
 uri = "file://images/slab-leak-repair.png"
 type = "image"
-title = "slab leak repair detection"
+title = "slab leak acoustic detection"
 
 [[generated]]
 id = "CtcqPi2SOL4jLjvx4hKV3"
 uri = "file://images/leak-detection-service.png"
 type = "image"
-title = "leak detection service"
+title = "leak detection wall sensor"
+
+[[generated]]
+id = "HTdiduHcfkh6v-qZznmet"
+uri = "file://images/hero-plumber-truck-v2.png"
+type = "image"
+title = "branded plumber service truck"
+
+[[generated]]
+id = "a8LZoHRNwbaECaHASqBrK"
+uri = "file://images/cracked-clay-pipe-v2.png"
+type = "image"
+title = "cracked clay sewer pipe"
+
+[[generated]]
+id = "QkfYSgSlvyXfnjvcLVs-K"
+uri = "file://images/hydro-jetting-service-v2.png"
+type = "image"
+title = "hydro jetting service"
+
+[[generated]]
+id = "gqAD9hxem3VviZJbm8vr2"
+uri = "file://images/trenchless-repair-v2.png"
+type = "image"
+title = "trenchless sewer repair"
+
+[[generated]]
+id = "uVJ7pZNZZOnyXXxiUM3_-"
+uri = "file://images/sewer-camera-inspection-v2.png"
+type = "image"
+title = "sewer camera inspection"
+
+[[generated]]
+id = "V0izp2vdDfvB791TOY3WS"
+uri = "file://images/emergency-plumbing-v2.png"
+type = "image"
+title = "emergency plumber night call"
+
+[[generated]]
+id = "ZQQ4w_SiDo_ZqDVbm1ZY2"
+uri = "file://images/root-intrusion-pipe-v2.png"
+type = "image"
+title = "tree root intrusion in pipe"
