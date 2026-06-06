@@ -433,6 +433,17 @@ section.section-alt { background:var(--light-bg); }
 .content-body a { color:var(--accent); font-weight:600; }
 .content-body a:hover { color:var(--accent-dark); }
 
+/* ===== Prevent horizontal scroll globally ===== */
+html, body { overflow-x:hidden; }
+
+/* ===== Hero image helper ===== */
+.hero-image img { border-radius:var(--radius); box-shadow:var(--shadow-lg); }
+
+/* ===== Ensure all buttons have decent touch target ===== */
+.btn { min-height:44px; display:inline-flex; align-items:center; justify-content:center; }
+.btn-block { display:flex; }
+.faq-question { min-height:52px; }
+
 /* ===== Responsive ===== */
 @media (max-width: 992px) {
   h1 { font-size:2rem; }
@@ -448,28 +459,173 @@ section.section-alt { background:var(--light-bg); }
   .trust-grid { grid-template-columns:repeat(2,1fr); }
   .stats-grid { grid-template-columns:repeat(2,1fr); }
 }
+
 @media (max-width: 768px) {
-  body { font-size:16px; padding-bottom:60px; }
-  h1, .hero h1 { font-size:1.85rem; }
-  h2 { font-size:1.55rem; }
-  h3 { font-size:1.25rem; }
-  .top-bar { font-size:.8rem; }
-  .top-bar-left span { margin-right:10px; }
+  /* Base */
+  body { font-size:16px; padding-bottom:70px; }
+  .container, .container-narrow { padding:0 16px; }
+
+  /* Typography */
+  h1, .hero h1 { font-size:1.8rem; }
+  h2 { font-size:1.5rem; }
+  h3 { font-size:1.2rem; }
+  .section-head h2 { font-size:1.55rem; }
+
+  /* Top bar — show only phone on mobile */
+  .top-bar { font-size:.82rem; padding:7px 0; }
+  .top-bar-left { display:none; }
+  .top-bar-inner { justify-content:center; }
+
+  /* Header */
+  .header-inner { padding:12px 16px; }
+  .logo svg { width:40px; height:40px; }
+  .logo-text { font-size:1.15rem; }
   .main-nav { display:none; }
-  .main-nav.open { display:block; position:absolute; top:100%; left:0; right:0;
-    background:var(--white); box-shadow:var(--shadow-lg); padding:15px; }
-  .main-nav.open ul { flex-direction:column; gap:0; }
+  .main-nav.open {
+    display:block; position:fixed; top:0; left:0; right:0; bottom:0;
+    background:rgba(0,0,0,.5); z-index:200; padding:0;
+  }
+  .main-nav.open ul {
+    flex-direction:column; gap:0; background:var(--white);
+    padding:20px 0; box-shadow:var(--shadow-lg);
+    max-height:100vh; overflow-y:auto;
+  }
   .main-nav.open li { width:100%; }
-  .main-nav.open a { display:block; padding:12px 18px; }
-  .mobile-toggle { display:block; }
+  .main-nav.open a { display:block; padding:14px 24px; font-size:1.05rem; border-bottom:1px solid var(--border); }
+  .main-nav.open a:last-child { border-bottom:none; }
+  .mobile-toggle { display:block; font-size:1.8rem; padding:4px 8px; }
+  .mobile-toggle.is-open { color:var(--accent); }
   .header-cta { display:none; }
-  .mobile-call-btn { display:block; }
-  section.section { padding:50px 0; }
-  .services-grid { grid-template-columns:1fr; }
-  .footer-grid { grid-template-columns:1fr; gap:25px; text-align:left; }
+
+  /* Mobile sticky call button — more prominent */
+  .mobile-call-btn {
+    display:block; padding:17px 20px; font-size:1.05rem;
+    letter-spacing:.02em;
+  }
+
+  /* Emergency banner */
+  .emergency-banner { font-size:.82rem; padding:9px 16px; }
+
+  /* Hero */
+  .hero { padding:36px 0 44px; }
+  .hero h1 { font-size:1.7rem; margin-bottom:14px; }
+  .hero p.lead { font-size:1.05rem; margin-bottom:20px; }
+  .hero-badge { font-size:.78rem; padding:5px 12px; margin-bottom:14px; }
+  .hero-features { margin:18px 0 24px; }
+  .hero-features li { font-size:.98rem; margin-bottom:8px; }
+  .hero-cta-row { flex-direction:column; gap:10px; }
+  .hero-cta-row .btn { width:100%; }
+  .hero-image { display:none; } /* saves scroll & load on mobile */
+
+  /* Quote form */
+  .quote-card { padding:22px 18px; }
+  .quote-card h3 { font-size:1.25rem; }
+
+  /* Sections */
+  section.section { padding:42px 0; }
+  .section-head { margin-bottom:32px; }
+  .section-head p { font-size:1rem; }
+
+  /* Trust strip */
+  .trust-strip { padding:24px 0; }
+  .trust-grid { grid-template-columns:repeat(2,1fr); gap:18px; }
+  .trust-item svg { width:34px; height:34px; }
+  .trust-item strong { font-size:1.1rem; }
+
+  /* Services */
+  .services-grid { grid-template-columns:1fr; gap:16px; }
+  .service-card { padding:20px; }
+
+  /* Stats */
+  .stats-bar { padding:36px 0; }
+  .stats-grid { grid-template-columns:repeat(2,1fr); gap:20px; }
+  .stat-num { font-size:2.2rem; }
+
+  /* Reasons */
+  .reasons-grid { grid-template-columns:1fr; gap:16px; }
+  .reason-card { padding:20px; }
+
+  /* Differentiators list */
+  .diff-list li { padding:14px 14px 14px 52px; font-size:.97rem; }
+  .diff-list li::before { left:14px; width:26px; height:26px; font-size:.85rem; }
+
+  /* CTA boxes — full-width button */
+  .cta-box { padding:24px 20px; }
+  .cta-box .btn { display:flex; width:100%; }
+
+  /* CTA strip */
+  .cta-strip { padding:44px 0; }
+  .cta-strip h2 { font-size:1.55rem; }
+  .cta-strip p { font-size:1rem; }
+  .cta-strip .btn { display:block; width:100%; margin:0 0 10px; }
+
+  /* Reviews */
+  .reviews-grid { grid-template-columns:1fr; gap:16px; }
+  .review-card { padding:20px; }
+
+  /* FAQ */
+  .faq-question { padding:16px 18px; font-size:1rem; }
+  .faq-answer { padding:0 18px; }
+  .faq-item.open .faq-answer { padding:0 18px 18px; }
+
+  /* Footer */
+  .site-footer { padding:36px 0 0; }
+  .footer-grid { grid-template-columns:1fr; gap:22px; }
+  .footer-bottom { padding:18px 0; font-size:.82rem; }
+  .footer-phone { font-size:1.3rem; }
+  .footer-bottom-links a { margin:0 6px; }
+
+  /* Page banner */
   .hero { padding:50px 0 60px; }
-  .page-banner { padding:50px 0 40px; }
-  .page-banner h1 { font-size:1.85rem; }
-  .cta-strip h2 { font-size:1.7rem; }
-  .section-head h2 { font-size:1.75rem; }
+  .page-banner { padding:44px 0 36px; }
+  .page-banner h1 { font-size:1.7rem; }
+  .page-banner p { font-size:1rem; }
+
+  /* Service layout sidebar */
+  .service-layout { grid-template-columns:1fr; gap:30px; }
+  .sidebar-sticky { position:static; }
+
+  /* Pricing box */
+  .pricing-box { padding:20px; }
+  .pricing-box li { flex-direction:column; align-items:flex-start; gap:4px; }
+
+  /* Table — make scrollable */
+  .styled-table { display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+}
+
+@media (max-width: 480px) {
+  /* Very small phones */
+  body { font-size:15px; }
+  h1, .hero h1 { font-size:1.55rem; }
+  h2 { font-size:1.35rem; }
+  h3 { font-size:1.1rem; }
+  .section-head h2 { font-size:1.4rem; }
+
+  .emergency-banner { font-size:.78rem; }
+  .hero-badge { font-size:.74rem; padding:4px 10px; }
+  .hero h1 { font-size:1.5rem; }
+
+  .trust-grid { gap:12px; }
+  .trust-item strong { font-size:1rem; }
+  .trust-item span { font-size:.8rem; }
+
+  .stat-num { font-size:2rem; }
+  .stat-label { font-size:.85rem; }
+
+  .btn-large { padding:15px 20px; font-size:1rem; }
+
+  .quote-card { padding:18px 15px; }
+
+  .cta-box h3 { font-size:1.2rem; }
+
+  .service-card { padding:18px; }
+  .service-icon { width:46px; height:46px; }
+  .service-icon svg { width:26px; height:26px; }
+
+  .faq-question { font-size:.95rem; padding:15px 16px; }
+
+  .footer-phone { font-size:1.2rem; }
+  .footer-brand { font-size:1.2rem; }
+
+  .area-pill { padding:9px 16px; font-size:.9rem; }
 }
