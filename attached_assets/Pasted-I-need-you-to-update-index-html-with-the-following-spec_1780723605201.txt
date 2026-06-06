@@ -1,0 +1,115 @@
+I need you to update index.html with the following 
+specific changes. Do NOT change any CSS, JS, navigation, 
+header, footer links, or meta tags. Only make exactly 
+what I list below.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHANGE 1 — ADD HERO IMAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+In the hero section, after the hero text content and 
+before the closing </section> tag, add this image block:
+
+<div class="hero-image">
+  <img 
+    src="/images/hero-plumber-truck.jpg" 
+    alt="Tulsa Sewer & Drain licensed plumber serving 
+    Tulsa OK" 
+    width="800" 
+    height="500" 
+    loading="eager"
+  >
+</div>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHANGE 2 — ADD CAMERA INSPECTION IMAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+In the services section, find the Sewer Camera 
+Inspection H3 block. Add this image directly inside 
+that service card, after the description text:
+
+<img 
+  src="/images/sewer-camera-inspection.jpg" 
+  alt="Sewer camera inspection Tulsa OK showing pipe 
+  interior" 
+  width="600" 
+  height="400" 
+  loading="lazy"
+>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHANGE 3 — ADD ROOT INTRUSION IMAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Find the "Aggressive Tree Root Systems" H3 section 
+inside "Why Tulsa Homes" section. Add this image 
+after the paragraph text in that subsection:
+
+<img 
+  src="/images/root-intrusion-pipe.jpg" 
+  alt="Tree root intrusion in Tulsa sewer line before 
+  trenchless repair" 
+  width="600" 
+  height="400" 
+  loading="lazy"
+>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHANGE 4 — ADD CRACKED CLAY PIPE IMAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Find the "Aging Pipe Materials" H3 section inside 
+"Why Tulsa Homes" section. Add this image after 
+the paragraph text in that subsection:
+
+<img 
+  src="/images/cracked-clay-pipe.jpg" 
+  alt="Cracked clay sewer pipe Tulsa OK Midtown home 
+  built 1960s" 
+  width="600" 
+  height="400" 
+  loading="lazy"
+>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHANGE 5 — ADD PLUMBER + HOMEOWNER IMAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Find the "What Makes Us Different" section. Add 
+this image at the top of that section, before 
+the bullet list:
+
+<img 
+  src="/images/plumber-homeowner-tablet.jpg" 
+  alt="Tulsa plumber showing homeowner sewer camera 
+  inspection results on tablet" 
+  width="700" 
+  height="450" 
+  loading="lazy"
+>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHANGE 6 — UPDATE SCHEMA IMAGE FIELD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+In the existing JSON-LD schema script, find this line:
+"image":"https://tulsaseweranddrain.com/images/logo.svg"
+
+Replace it with:
+"image":"https://tulsaseweranddrain.com/images/hero-plumber-truck.jpg"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHANGE 7 — DO NOT ADD aggregateRating TO SCHEMA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+The schema does NOT have aggregateRating and that 
+is correct. Do NOT add any aggregateRating or 
+reviewCount block to the schema. We have no verified 
+real reviews yet and adding fake review counts 
+violates Google guidelines and FTC rules. Leave 
+schema exactly as is except for the image field 
+updated in Change 6.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IMPORTANT NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+- Do NOT change any existing text content
+- Do NOT change phone numbers, nav, header, footer
+- Do NOT change any CSS classes
+- Images will be uploaded to /images/ folder manually
+- After changes, show me each modified section so 
+  I can verify before saving
