@@ -68,6 +68,20 @@
       if(href === path || (path === '' && href === '')) a.classList.add('active');
     });
 
+    /* ===== Quote Form Submission GA4 Tracking ===== */
+    document.querySelectorAll('form.quote-card').forEach(function(form){
+      form.addEventListener('submit', function(){
+        if(typeof gtag === 'function'){
+          var service = (form.querySelector('[name="service"]') || {}).value || 'unknown';
+          gtag('event', 'quote_form_submit', {
+            event_category: 'lead',
+            event_label: service,
+            page_location: window.location.href
+          });
+        }
+      });
+    });
+
     /* ===== Click-to-Call GA4 Tracking ===== */
     document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
       a.addEventListener('click', function(){
