@@ -25,11 +25,14 @@
 <meta property="og:description" content="Stop guessing what's wrong with your drains. Our Tulsa sewer camera inspection shows you exactly what's inside your pipes — live, on screen. Upfront pricing.">
 <meta property="og:url" content="https://tulsaseweranddrain.com/sewer-camera-inspection/">
 <meta property="og:site_name" content="Tulsa Sewer & Drain">
-<meta property="og:image" content="https://tulsaseweranddrain.com/images/og-image.svg">
+<meta property="og:image" content="https://tulsaseweranddrain.com/images/hero-plumber-truck.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tulsaseweranddrain.com/images/hero-plumber-truck.webp">
 <meta name="twitter:title" content="Sewer Camera Inspection Tulsa | See Before You Fix">
 <meta name="twitter:description" content="Stop guessing what's wrong with your drains. Our Tulsa sewer camera inspection shows you exactly what's inside your pipes — live, on screen. Upfront pricing.">
 
@@ -100,6 +103,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does a sewer camera inspection take?","acceptedAnswer":{"@type":"Answer","text":"Most residential sewer camera inspections take 45 minutes to 90 minutes from arrival to finish, including setup, the inspection itself, reviewing footage with you, and discussing findings. If we discover something that requires additional assessment or a repair quote, add another 15–20 minutes."}},{"@type":"Question","name":"Is a sewer scope inspection worth it when buying a home in Tulsa?","acceptedAnswer":{"@type":"Answer","text":"Absolutely — especially for homes built before 1975. A standard home inspection doesn't include the underground sewer line. In Tulsa, where a significant portion of older homes still have original clay sewer pipe, a pre-purchase sewer scope for $150–$250 can reveal problems that would cost $5,000–$15,000 to fix after closing. We've inspected homes that passed standard inspection only to find root-filled or partially collapsed sewer lines. It's one of the best $200 you'll spend before buying a Tulsa home."}},{"@type":"Question","name":"Will the camera damage my pipes?","acceptedAnswer":{"@type":"Answer","text":"No. The camera rod is flexible and designed to navigate pipe bends without damaging pipe walls. The only scenario where we'd be concerned is a pipe that is already severely compromised — and in that case, we'd note the condition as soon as we see it on screen."}},{"@type":"Question","name":"Can I get a copy of the camera footage?","acceptedAnswer":{"@type":"Answer","text":"Yes, always. We record every inspection and provide you with the footage. For pre-purchase home inspections, this documentation is particularly valuable — you can share it with your real estate agent, your lender, or use it to negotiate repair credits with the seller."}},{"@type":"Question","name":"Do I need to do anything to prepare for the inspection?","acceptedAnswer":{"@type":"Answer","text":"Not much. Knowing where your main sewer cleanout is located helps (usually a capped pipe near the foundation or in the yard), but we'll find it if you don't. Avoid running large amounts of water immediately before the inspection — a flowing line can make camera visibility harder."}},{"@type":"Question","name":"What happens if the camera finds a serious problem?","acceptedAnswer":{"@type":"Answer","text":"We'll show you exactly what we found on screen, explain what it means, and give you a clear explanation of your repair options with upfront pricing. For issues like root intrusion or pipe cracks, we'll discuss whether hydro jetting, trenchless pipe lining, or pipe bursting is the appropriate fix. You decide how to proceed — no pressure."}},{"@type":"Question","name":"My drain was just snaked and it's clogged again. Do I need a camera?","acceptedAnswer":{"@type":"Answer","text":"Almost certainly yes. Recurring clogs after snaking are a clear sign the snake is clearing a path through a problem but not addressing the underlying cause. The camera will show us whether you have root intrusion growing back, a bellied pipe where solids keep collecting, or a buildup issue that needs hydro jetting to fully clear."}},{"@type":"Question","name":"Do you offer sewer camera inspection in Broken Arrow, Owasso, and surrounding areas?","acceptedAnswer":{"@type":"Answer","text":"Yes. We serve the entire Tulsa metro area including Broken Arrow, Owasso, Bixby, Sand Springs, Jenks, Sapulpa, Glenpool, Catoosa, and Kellyville. Same-day camera inspections are available throughout our service area."}}]}</script>
 </head>
 <body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
 <!-- Emergency Banner -->
 <div class="emergency-banner">
   ⚡ 24/7 Emergency Service — <a href="tel:+19189924725">Call (918) 992-4725</a> — 60-Minute Response in Tulsa Metro
@@ -149,7 +153,7 @@
 <section class="section">
   <div class="container">
     <div class="service-layout">
-      <main class="content-body">
+      <main id="main-content" class="content-body">
         <p>Here's the problem with most drain and sewer diagnoses: they're guesswork. A plumber snakes a drain, it clears temporarily, and three weeks later you're calling again. Nobody looked inside the pipe to find out why it kept clogging.</p>
         <p>A sewer camera inspection changes that. We run a high-resolution waterproof camera through your drain or sewer line and see exactly what's inside — live, on a monitor, with you watching. Root intrusion, pipe cracks, collapsed sections, grease buildup, offset joints — whatever is in your pipe, we find it and show it to you before recommending a single repair.</p>
         <p><strong>No guesswork. No unnecessary work. No surprises on the bill.</strong></p>
@@ -305,11 +309,12 @@
   <input type="checkbox" name="botcheck" style="display:none;">
   <h3>Get a Free Quote</h3>
   <p class="form-sub">Flat-rate pricing · No obligation · Reply within 1 hour</p>
-  <div class="form-field"><input type="text" name="name" placeholder="Your Name" required></div>
-  <div class="form-field"><input type="tel" name="phone" placeholder="Phone Number" required></div>
-  <div class="form-field"><input type="email" name="email" placeholder="Email Address" required></div>
+  <div class="form-field"><label for="f-name" class="sr-only">Your Name</label><input type="text" id="f-name" name="name" placeholder="Your Name" required></div>
+  <div class="form-field"><label for="f-phone" class="sr-only">Phone Number</label><input type="tel" id="f-phone" name="phone" placeholder="Phone Number" required></div>
+  <div class="form-field"><label for="f-email" class="sr-only">Email Address</label><input type="email" id="f-email" name="email" placeholder="Email Address" required></div>
   <div class="form-field">
-    <select name="service" required>
+    <label for="f-service" class="sr-only">Service Needed</label>
+    <select id="f-service" name="service" required>
       <option value="">-- Service Needed --</option>
       <option>Drain Cleaning</option>
       <option>Sewer Line Repair</option>
@@ -320,7 +325,7 @@
       <option>Other / Not Sure</option>
     </select>
   </div>
-  <div class="form-field"><textarea name="message" placeholder="Briefly describe your problem (optional)"></textarea></div>
+  <div class="form-field"><label for="f-message" class="sr-only">Describe your problem</label><textarea id="f-message" name="message" placeholder="Briefly describe your problem (optional)"></textarea></div>
   <button type="submit" class="btn btn-primary btn-block btn-large">Get My Free Quote</button>
   <p class="form-trust">🔒 Your info stays private. We never share it.</p>
 </form></div>
@@ -425,6 +430,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/plumbers-tulsa/">About Our Plumbers</a></li>
           <li><a href="/emergency-plumber-tulsa/">24/7 Emergency</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
           <li><a href="/privacy-policy/">Privacy Policy</a></li>
           <li><a href="/terms-of-service/">Terms of Service</a></li>
         </ul>
@@ -444,7 +450,7 @@
 <!-- Mobile sticky call button -->
 <a href="tel:+19189924725" class="mobile-call-btn">📞 Call (918) 992-4725 — 24/7</a>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>

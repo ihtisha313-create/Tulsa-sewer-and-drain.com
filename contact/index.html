@@ -25,11 +25,14 @@
 <meta property="og:description" content="Contact Tulsa Sewer & Drain for a free, flat-rate quote. Call (918) 992-4725 anytime — 24/7. Serving Tulsa, Broken Arrow, Owasso, Bixby, Jenks & the full metro.">
 <meta property="og:url" content="https://tulsaseweranddrain.com/contact/">
 <meta property="og:site_name" content="Tulsa Sewer & Drain">
-<meta property="og:image" content="https://tulsaseweranddrain.com/images/og-image.svg">
+<meta property="og:image" content="https://tulsaseweranddrain.com/images/hero-plumber-truck.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tulsaseweranddrain.com/images/hero-plumber-truck.webp">
 <meta name="twitter:title" content="Contact Tulsa Sewer & Drain | Get a Free Quote Today">
 <meta name="twitter:description" content="Contact Tulsa Sewer & Drain for a free, flat-rate quote. Call (918) 992-4725 anytime — 24/7.">
 
@@ -80,6 +83,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tulsaseweranddrain.com/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://tulsaseweranddrain.com/contact/"}]}</script>
 </head>
 <body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
 
 <!-- Emergency Banner -->
 <div class="emergency-banner">
@@ -184,11 +188,12 @@
             <input type="checkbox" name="botcheck" style="display:none;">
             <h3>Get a Free Quote</h3>
             <p class="form-sub">Flat-rate pricing · No obligation · Reply within 1 hour</p>
-            <div class="form-field"><input type="text" name="name" placeholder="Your Name" required></div>
-            <div class="form-field"><input type="tel" name="phone" placeholder="Phone Number" required></div>
-            <div class="form-field"><input type="email" name="email" placeholder="Email Address" required></div>
+            <div class="form-field"><label for="f-name" class="sr-only">Your Name</label><input type="text" id="f-name" name="name" placeholder="Your Name" required></div>
+            <div class="form-field"><label for="f-phone" class="sr-only">Phone Number</label><input type="tel" id="f-phone" name="phone" placeholder="Phone Number" required></div>
+            <div class="form-field"><label for="f-email" class="sr-only">Email Address</label><input type="email" id="f-email" name="email" placeholder="Email Address" required></div>
             <div class="form-field">
-              <select name="service" required>
+              <label for="f-service" class="sr-only">Service Needed</label>
+    <select id="f-service" name="service" required>
                 <option value="">-- Service Needed --</option>
                 <option>Drain Cleaning</option>
                 <option>Sewer Line Repair</option>
@@ -199,7 +204,7 @@
                 <option>Other / Not Sure</option>
               </select>
             </div>
-            <div class="form-field"><textarea name="message" placeholder="Briefly describe your problem (optional)"></textarea></div>
+            <div class="form-field"><label for="f-message" class="sr-only">Describe your problem</label><textarea id="f-message" name="message" placeholder="Briefly describe your problem (optional)"></textarea></div>
             <button type="submit" class="btn btn-primary btn-block btn-large">Get My Free Quote</button>
             <p class="form-trust">🔒 Your info stays private. We never share it.</p>
           </form>
@@ -277,6 +282,7 @@
           <li><a href="/plumbers-tulsa/">About Our Plumbers</a></li>
           <li><a href="/emergency-plumber-tulsa/">24/7 Emergency</a></li>
           <li><a href="/contact/">Contact</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
           <li><a href="/privacy-policy/">Privacy Policy</a></li>
           <li><a href="/terms-of-service/">Terms of Service</a></li>
         </ul>
@@ -297,7 +303,7 @@
 <!-- Mobile sticky call button -->
 <a href="tel:+19189924725" class="mobile-call-btn">📞 Call (918) 992-4725 — 24/7</a>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>

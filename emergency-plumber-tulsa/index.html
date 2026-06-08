@@ -25,11 +25,14 @@
 <meta property="og:description" content="Burst pipe? Sewer backup? Our licensed Tulsa plumbers arrive in 60 minutes, 24/7. Flat-rate pricing, no hidden fees. Call now — we pick up every time.">
 <meta property="og:url" content="https://tulsaseweranddrain.com/emergency-plumber-tulsa/">
 <meta property="og:site_name" content="Tulsa Sewer & Drain">
-<meta property="og:image" content="https://tulsaseweranddrain.com/images/og-image.svg">
+<meta property="og:image" content="https://tulsaseweranddrain.com/images/hero-plumber-truck.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tulsaseweranddrain.com/images/hero-plumber-truck.webp">
 <meta name="twitter:title" content="Emergency Plumber Tulsa | 60-Min Response | TSD">
 <meta name="twitter:description" content="Burst pipe? Sewer backup? Our licensed Tulsa plumbers arrive in 60 minutes, 24/7. Flat-rate pricing, no hidden fees. Call now — we pick up every time.">
 
@@ -100,6 +103,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does an emergency plumber charge per hour in Tulsa?","acceptedAnswer":{"@type":"Answer","text":"Most Tulsa emergency plumbers charge between $150 and $300 per hour for after-hours calls, though hourly billing can make final costs unpredictable. At Tulsa Sewer &amp; Drain, we don't bill by the hour — we give you a flat-rate quote upfront before any work begins, so you know exactly what you're paying."}},{"@type":"Question","name":"How much does a plumber charge for an emergency call out?","acceptedAnswer":{"@type":"Answer","text":"Emergency call-out fees in Tulsa typically range from $75 to $150 just to show up, before any work is done. We include our dispatch and assessment in our flat-rate quote — there's no separate trip fee layered on top of the job cost."}},{"@type":"Question","name":"What is considered a plumbing emergency?","acceptedAnswer":{"@type":"Answer","text":"A plumbing emergency is any situation that poses an immediate risk of property damage, health hazard, or complete loss of water service. This includes burst pipes, active flooding, raw sewage backups, no water to the home, suspected gas leaks near plumbing, and water heater failures. Slow drains or dripping faucets are urgent but typically not emergencies."}},{"@type":"Question","name":"How fast can you get to my house in Tulsa?","acceptedAnswer":{"@type":"Answer","text":"Our goal is 60 minutes or less anywhere in the Tulsa metro. For most neighborhoods in Midtown, South Tulsa, East Tulsa, and surrounding cities like Broken Arrow and Owasso, we regularly hit that target. We'll give you an honest ETA when you call."}},{"@type":"Question","name":"Do you charge more for nights, weekends, and holidays?","acceptedAnswer":{"@type":"Answer","text":"We do have after-hours rates, and we're upfront about them when you call. We don't hide surcharges in the fine print. Our pricing is flat-rate and disclosed before any work starts — no surprises at the end of the job."}},{"@type":"Question","name":"Can I turn off my water main while I wait for the plumber?","acceptedAnswer":{"@type":"Answer","text":"Yes — and in most emergencies involving active leaks or burst pipes, you absolutely should. Your main shutoff is typically located near the street at your meter box or in your garage/utility room. Shutting it off stops water flow immediately and limits damage. We'll walk you through it on the phone if you need help finding it."}},{"@type":"Question","name":"Do you handle sewer backups as emergencies?","acceptedAnswer":{"@type":"Answer","text":"Yes. A sewer backup is one of the most urgent plumbing situations a Tulsa homeowner can face — raw sewage in your home is a health hazard. We treat sewer backups as Priority 1 calls, arrive with our sewer camera, and clear and verify the line before we leave."}},{"@type":"Question","name":"Are your plumbers actually licensed in Oklahoma?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every plumber on our team holds an Oklahoma plumbing license. You'll never get an unlicensed subcontractor on an emergency call. We can provide license numbers on request."}}]}</script>
 </head>
 <body>
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
 <!-- Emergency Banner -->
 <div class="emergency-banner">
   ⚡ 24/7 Emergency Service — <a href="tel:+19189924725">Call (918) 992-4725</a> — 60-Minute Response in Tulsa Metro
@@ -151,7 +155,7 @@
 <section class="section">
   <div class="container">
     <div class="service-layout">
-      <main class="content-body">
+      <main id="main-content" class="content-body">
         <p>It's midnight. Water is pouring out from under your sink, or your basement drain is backing up raw sewage. You don't need a voicemail. You need a real, licensed plumber on the line right now.</p>
         <p>That's exactly what you get when you call Tulsa Sewer &amp; Drain. <strong>We answer every call ourselves — no call centers, no answering services</strong> — and our licensed Oklahoma plumbers are on the road within minutes. Our goal is to be at your door within 60 minutes anywhere in the Tulsa metro.</p>
 
@@ -288,11 +292,12 @@
   <input type="checkbox" name="botcheck" style="display:none;">
   <h3>Get a Free Quote</h3>
   <p class="form-sub">Flat-rate pricing · No obligation · Reply within 1 hour</p>
-  <div class="form-field"><input type="text" name="name" placeholder="Your Name" required></div>
-  <div class="form-field"><input type="tel" name="phone" placeholder="Phone Number" required></div>
-  <div class="form-field"><input type="email" name="email" placeholder="Email Address" required></div>
+  <div class="form-field"><label for="f-name" class="sr-only">Your Name</label><input type="text" id="f-name" name="name" placeholder="Your Name" required></div>
+  <div class="form-field"><label for="f-phone" class="sr-only">Phone Number</label><input type="tel" id="f-phone" name="phone" placeholder="Phone Number" required></div>
+  <div class="form-field"><label for="f-email" class="sr-only">Email Address</label><input type="email" id="f-email" name="email" placeholder="Email Address" required></div>
   <div class="form-field">
-    <select name="service" required>
+    <label for="f-service" class="sr-only">Service Needed</label>
+    <select id="f-service" name="service" required>
       <option value="">-- Service Needed --</option>
       <option>Drain Cleaning</option>
       <option>Sewer Line Repair</option>
@@ -303,7 +308,7 @@
       <option>Other / Not Sure</option>
     </select>
   </div>
-  <div class="form-field"><textarea name="message" placeholder="Briefly describe your problem (optional)"></textarea></div>
+  <div class="form-field"><label for="f-message" class="sr-only">Describe your problem</label><textarea id="f-message" name="message" placeholder="Briefly describe your problem (optional)"></textarea></div>
   <button type="submit" class="btn btn-primary btn-block btn-large">Get My Free Quote</button>
   <p class="form-trust">🔒 Your info stays private. We never share it.</p>
 </form></div>
@@ -408,6 +413,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/plumbers-tulsa/">About Our Plumbers</a></li>
           <li><a href="/emergency-plumber-tulsa/">24/7 Emergency</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
           <li><a href="/privacy-policy/">Privacy Policy</a></li>
           <li><a href="/terms-of-service/">Terms of Service</a></li>
         </ul>
@@ -427,7 +433,7 @@
 <!-- Mobile sticky call button -->
 <a href="tel:+19189924725" class="mobile-call-btn">📞 Call (918) 992-4725 — 24/7</a>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
