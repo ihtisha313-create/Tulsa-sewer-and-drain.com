@@ -68,6 +68,19 @@
       if(href === path || (path === '' && href === '')) a.classList.add('active');
     });
 
+    /* ===== Click-to-Call GA4 Tracking ===== */
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+      a.addEventListener('click', function(){
+        if(typeof gtag === 'function'){
+          gtag('event', 'click_to_call', {
+            event_category: 'engagement',
+            event_label: a.getAttribute('href').replace('tel:',''),
+            page_location: window.location.href
+          });
+        }
+      });
+    });
+
     /* ===== Smooth scroll for anchor links with sticky header offset ===== */
     document.querySelectorAll('a[href^="#"]').forEach(function(a){
       a.addEventListener('click',function(e){
