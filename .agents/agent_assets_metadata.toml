@@ -216,3 +216,33 @@ id = "5YDuKhFlGH48sMEHDmQCW"
 uri = "file://attached_assets/generated_images/professional_plumber_technician_pointing_bb03.png"
 type = "image"
 title = "generated_image"
+
+[[generated]]
+id = "KXQgWBJ1da3P9NGWiRwmR"
+uri = "file://images/trenchless-vs-traditional.png"
+type = "image"
+title = "trenchless vs traditional excavation"
+
+[[generated]]
+id = "OPZnZb5fhadKmErQHAzvt"
+uri = "file://images/cipp-pipe-lining-process.png"
+type = "image"
+title = "CIPP pipe lining process cross section"
+
+[[generated]]
+id = "q5jBv1enSpMBpnfQo2mCs"
+uri = "file://images/cracked-clay-pipe-camera.png"
+type = "image"
+title = "cracked clay pipe sewer camera view"
+
+[[generated]]
+id = "APtiTLBk7op_1kr_9gsmb"
+uri = "file://images/trenchless-repair-no-dig.png"
+type = "image"
+title = "trenchless sewer repair no dig technician"
+
+[[generated]]
+id = "E1qpq7YHVvF8hxZQgVFCk"
+uri = "file://images/pipe-lining-before-after.png"
+type = "image"
+title = "pipe lining before after comparison"
