@@ -246,3 +246,33 @@ id = "E1qpq7YHVvF8hxZQgVFCk"
 uri = "file://images/pipe-lining-before-after.png"
 type = "image"
 title = "pipe lining before after comparison"
+
+[[generated]]
+id = "wYz85YkcOGwLlOlhO4rBz"
+uri = "file://images/sewer-camera-inspection-access.png"
+type = "image"
+title = "sewer camera inspection access point technician"
+
+[[generated]]
+id = "Zw68l-artJxGY4ieSaR3h"
+uri = "file://images/sewer-camera-live-review.png"
+type = "image"
+title = "technician homeowner watching sewer camera live"
+
+[[generated]]
+id = "v45-5OaaOli8jojio8fro"
+uri = "file://images/root-intrusion-camera-view.png"
+type = "image"
+title = "tree root intrusion sewer camera view"
+
+[[generated]]
+id = "U_trIlMipe_RKAHX3Zvi9"
+uri = "file://images/clay-pipe-crack-camera.png"
+type = "image"
+title = "cracked clay pipe camera close-up"
+
+[[generated]]
+id = "JxGaYQ358CgVrJhgLQ3wQ"
+uri = "file://images/camera-inspection-result.png"
+type = "image"
+title = "sewer camera before after blocked clear pipe"
