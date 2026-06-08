@@ -276,3 +276,33 @@ id = "JxGaYQ358CgVrJhgLQ3wQ"
 uri = "file://images/camera-inspection-result.png"
 type = "image"
 title = "sewer camera before after blocked clear pipe"
+
+[[generated]]
+id = "suJ3ABYrc64OsVG0gMi-W"
+uri = "file://images/emergency-plumber-arrival.png"
+type = "image"
+title = "Emergency plumber arriving at night"
+
+[[generated]]
+id = "x4C8rIs5W3zTLADn5LYtU"
+uri = "file://images/burst-pipe-emergency.png"
+type = "image"
+title = "Burst pipe spraying water in wall"
+
+[[generated]]
+id = "XvZ4d7lagKlnxl_IZyj9K"
+uri = "file://images/sewer-backup-emergency.png"
+type = "image"
+title = "Sewage backing up into floor drain"
+
+[[generated]]
+id = "8of0n4emQn6XYG_0yMW1m"
+uri = "file://images/emergency-flat-rate-quote.png"
+type = "image"
+title = "Plumber showing homeowner flat-rate quote on tablet"
+
+[[generated]]
+id = "B2WYqEHDvoa5yu53NttcZ"
+uri = "file://images/tulsa-service-area-map.png"
+type = "image"
+title = "Tulsa metro service area map"
