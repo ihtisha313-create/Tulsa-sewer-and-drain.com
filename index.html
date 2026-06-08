@@ -49,7 +49,8 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"></noscript>
 
 <!-- Stylesheet -->
 <link rel="stylesheet" href="/css/style.css">
@@ -95,6 +96,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tulsaseweranddrain.com/"}]}</script>
 <link rel="preload" as="image" href="/images/hero-plumber-truck.webp" fetchpriority="high">
 <meta name="theme-color" content="#1a3a5c">
+<link rel="dns-prefetch" href="https://api.web3forms.com">
 </head>
 <body>
 <a href="#main-content" class="skip-to-content">Skip to main content</a>
@@ -161,9 +163,9 @@
   <input type="checkbox" name="botcheck" style="display:none;">
   <h3>Get a Free Quote</h3>
   <p class="form-sub">Flat-rate pricing · No obligation · Reply within 1 hour</p>
-  <div class="form-field"><label for="f-name" class="sr-only">Your Name</label><input type="text" id="f-name" name="name" placeholder="Your Name" required></div>
-  <div class="form-field"><label for="f-phone" class="sr-only">Phone Number</label><input type="tel" id="f-phone" name="phone" placeholder="Phone Number" required></div>
-  <div class="form-field"><label for="f-email" class="sr-only">Email Address</label><input type="email" id="f-email" name="email" placeholder="Email Address" required></div>
+  <div class="form-field"><label for="f-name" class="sr-only">Your Name</label><input type="text" id="f-name" name="name" placeholder="Your Name" autocomplete="name" required></div>
+  <div class="form-field"><label for="f-phone" class="sr-only">Phone Number</label><input type="tel" id="f-phone" name="phone" placeholder="Phone Number" autocomplete="tel" required></div>
+  <div class="form-field"><label for="f-email" class="sr-only">Email Address</label><input type="email" id="f-email" name="email" placeholder="Email Address" autocomplete="email" required></div>
   <div class="form-field">
     <label for="f-service" class="sr-only">Service Needed</label>
     <select id="f-service" name="service" required>
@@ -177,7 +179,7 @@
       <option>Other / Not Sure</option>
     </select>
   </div>
-  <div class="form-field"><label for="f-message" class="sr-only">Describe your problem</label><textarea id="f-message" name="message" placeholder="Briefly describe your problem (optional)"></textarea></div>
+  <div class="form-field"><label for="f-message" class="sr-only">Describe your problem</label><textarea id="f-message" name="message" autocomplete="off" placeholder="Briefly describe your problem (optional)"></textarea></div>
   <button type="submit" class="btn btn-primary btn-block btn-large">Get My Free Quote</button>
   <p class="form-trust">🔒 Your info stays private. We never share it.</p>
 </form></div>
@@ -488,6 +490,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/plumbers-tulsa/">About Our Plumbers</a></li>
           <li><a href="/emergency-plumber-tulsa/">24/7 Emergency</a></li>
+          <li><a href="/about/">About Us</a></li>
           <li><a href="/contact/">Contact Us</a></li>
           <li><a href="/privacy-policy/">Privacy Policy</a></li>
           <li><a href="/terms-of-service/">Terms of Service</a></li>
