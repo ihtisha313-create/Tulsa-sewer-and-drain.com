@@ -306,3 +306,33 @@ id = "B2WYqEHDvoa5yu53NttcZ"
 uri = "file://images/tulsa-service-area-map.png"
 type = "image"
 title = "Tulsa metro service area map"
+
+[[generated]]
+id = "VhRXtSEDBhJFMEbXoh3Vm"
+uri = "file://attached_assets/generated_images/white_plumbing_service_van_1d81.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Ztask80G-dsx6Ljmz3Tyj"
+uri = "file://attached_assets/generated_images/tulsa_sewer_drain_technician_84e0.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "EW9u4gByxXfb4_CEmMxJg"
+uri = "file://attached_assets/generated_images/sewer_camera_inspection_screen_f125.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "MS2wfND6XwFoON_14jy2g"
+uri = "file://attached_assets/generated_images/professional_plumber_working_under_af17.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "nW-K42H7HFa9kBasSkawk"
+uri = "file://attached_assets/generated_images/split_view_before_and_b2f9.png"
+type = "image"
+title = "generated_image"
