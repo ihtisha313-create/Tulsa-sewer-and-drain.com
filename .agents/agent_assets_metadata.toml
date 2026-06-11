@@ -336,3 +336,33 @@ id = "nW-K42H7HFa9kBasSkawk"
 uri = "file://attached_assets/generated_images/split_view_before_and_b2f9.png"
 type = "image"
 title = "generated_image"
+
+[[generated]]
+id = "e19SyAYL2tiZj_MgByRMo"
+uri = "file://images/sewer-camera-broken-arrow.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "wZ2rP-_5yVk5p1W9-LnkB"
+uri = "file://images/root-intrusion-broken-arrow.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "zFXLm4eWzvwOv8t3rBpq7"
+uri = "file://images/tulsa-sewer-drain-broken-arrow.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "mUYqNKS-1bKFia6mttJKE"
+uri = "file://images/hydro-jetting-broken-arrow.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Od4Q9oE4ARV7T5QkN1KdI"
+uri = "file://images/broken-arrow-service-area.png"
+type = "image"
+title = "generated_image"

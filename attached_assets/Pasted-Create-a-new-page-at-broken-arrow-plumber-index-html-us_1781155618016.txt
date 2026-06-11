@@ -1,0 +1,69 @@
+Create a new page at broken-arrow-plumber/index.html
+using the attached SEO package file.
+
+Build it to match the same design, header, footer, 
+nav, and CSS as the other service pages on the site.
+
+Use EXACTLY this content from the package:
+- Meta title, meta description, canonical URL
+- H1, all H2s, H3s, paragraphs word for word
+- Full services bullet list with these internal links:
+  "drain cleaning" → /drain-cleaning/
+  "sewer line repair" → /sewer-line-repair/
+  "trenchless sewer repair" → /trenchless-sewer-repair-tulsa/
+  "sewer camera inspection" → /sewer-camera-inspection/
+  "24/7 emergency plumber" → /emergency-plumber-tulsa/
+- Both CTA blocks (Section 8 of package)
+- Pricing table (exact numbers from package)
+- All 7 FAQ items (exact text from package)
+
+Add JSON-LD schema from Section 5 BUT:
+- Remove the entire aggregateRating block
+- Remove the telephone field
+
+Generate and place these 5 images:
+
+Image 1: Plumber performing sewer camera 
+inspection at residential cleanout, Broken 
+Arrow suburban neighborhood, photorealistic
+Save as: /images/sewer-camera-broken-arrow.webp
+Place: after H1 intro, before CTA 1
+
+Image 2: Close-up sewer camera footage 
+showing tree root intrusion inside clay pipe,
+educational, photorealistic
+Save as: /images/root-intrusion-broken-arrow.webp
+Place: inside Older Neighborhoods H3 section
+
+Image 3: Service van parked in front of 
+suburban Broken Arrow home, sunny day,
+trust-inspiring, photorealistic
+Save as: /images/tulsa-sewer-drain-broken-arrow.webp
+Place: in Why Choose section
+
+Image 4: Hydro jetting equipment in use on 
+residential driveway, technician operating,
+photorealistic
+Save as: /images/hydro-jetting-broken-arrow.webp
+Place: in Services section
+
+Image 5: Map showing Broken Arrow service 
+area coverage zones with neighborhoods 
+labeled, clean professional style
+Save as: /images/broken-arrow-service-area.webp
+Place: in Neighborhoods & ZIP Codes section
+
+Also add a link TO this new page from these 
+existing pages:
+- index.html (homepage): add "Broken Arrow 
+  plumbing services" link in the service area 
+  or footer section
+- drain-cleaning/index.html: add "drain 
+  cleaning in Broken Arrow" link near the 
+  bottom of the page
+- sewer-line-repair/index.html: add "Broken 
+  Arrow sewer line repair" link near bottom
+
+Do not change anything else on those pages.
+Show me confirmation when the new page is 
+built and links are added.
