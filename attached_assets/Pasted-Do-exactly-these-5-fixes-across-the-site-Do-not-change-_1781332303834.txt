@@ -1,0 +1,42 @@
+Do exactly these 5 fixes across the site. Do not change anything else.
+FIX 1 — Update sitemap.xml
+Add these two entries to sitemap.xml before the closing </urlset> tag:
+xml<url>
+  <loc>https://tulsaseweranddrain.com/broken-arrow-plumber/</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://tulsaseweranddrain.com/owasso-plumber/</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+Also update all existing <lastmod> values in sitemap.xml to 2026-06-10.
+
+FIX 2 — Schema @id consistency
+In broken-arrow-plumber/index.html and owasso-plumber/index.html, find every instance of:
+"@id": "https://tulsaseweranddrain.com/#organization"
+Replace with:
+"@id": "https://tulsaseweranddrain.com/#business"
+
+FIX 3 — Fix broken schema image in Broken Arrow page
+In broken-arrow-plumber/index.html, in the JSON-LD schema, find:
+"image": "https://tulsaseweranddrain.com/images/tulsa-sewer-drain-logo.png"
+Replace with:
+"image": "https://tulsaseweranddrain.com/images/logo.svg"
+
+FIX 4 — Fix Emergency page FAQ contradiction
+In emergency-plumber-tulsa/index.html, find any FAQ answer that mentions "after-hours rates" or says anything like "we do have after-hours rates". Replace that answer with:
+Our pricing is flat-rate and does not change based on time of day, 
+day of week, or whether it's a holiday. The price quoted on the 
+phone is the price on the invoice — no after-hours surcharges, 
+no weekend premiums, ever.
+
+FIX 5 — Make footer location links clickable
+In these files: drain-cleaning/index.html, sewer-line-repair/index.html, hydro-jetting/index.html, trenchless-sewer-repair-tulsa/index.html, sewer-camera-inspection/index.html, emergency-plumber-tulsa/index.html, plumbers-tulsa/index.html
+In each footer, find plain text "Broken Arrow" and "Owasso" in the Service Area list and replace with linked versions:
+html<li><a href="/broken-arrow-plumber/">Broken Arrow</a></li>
+<li><a href="/owasso-plumber/">Owasso</a></li>
+Show me a confirmation list of every file changed when done.
