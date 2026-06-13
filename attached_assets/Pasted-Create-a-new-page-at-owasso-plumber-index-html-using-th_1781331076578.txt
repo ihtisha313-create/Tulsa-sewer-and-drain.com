@@ -1,0 +1,54 @@
+Create a new page at owasso-plumber/index.html using the attached SEO package file.
+Match the exact same design, header, footer, nav, and CSS as the other location pages (use broken-arrow-plumber/index.html as the template).
+Use EXACTLY this content from the package:
+
+Meta title, meta description, canonical URL
+H1 and all body content word for word
+All H2s and H3s in exact order
+Services bullet list with these internal links:
+
+"24/7 emergency plumbing" → /emergency-plumber-tulsa/
+"sewer camera inspection" → /sewer-camera-inspection/
+"hydro jetting" → /hydro-jetting/
+"trenchless sewer repair" → /trenchless-sewer-repair-tulsa/
+
+
+All 3 CTA blocks from Section 8
+Full pricing table exact numbers
+All 7 FAQ items exact text
+All 3 JSON-LD schema blocks from Section 5 — BUT remove aggregateRating and telephone fields
+
+Generate and place these 5 images:
+Image 1: Licensed plumber working at residential cleanout in Owasso suburban neighborhood, photorealistic
+
+Save as: /images/licensed-plumber-owasso-ok.webp
+
+Place: after H1 intro before first CTA
+Image 2: Sewer camera screen showing root intrusion inside clay tile pipe, educational, photorealistic
+
+Save as: /images/sewer-camera-inspection-owasso-root-damage.webp
+
+Place: in Why Sewer Lines Fail section
+Image 3: Side by side blocked vs cleared drain pipe comparison, photorealistic
+
+Save as: /images/drain-cleaning-before-after-owasso.webp
+
+Place: in Services section
+Image 4: Close-up cracked clay sewer pipe with visible root growth, photorealistic
+
+Save as: /images/clay-sewer-pipe-root-intrusion-owasso.webp
+
+Place: in Aging Pipes H3 section
+Image 5: Service van parked in residential Owasso neighborhood, sunny day, photorealistic
+
+Save as: /images/tulsa-sewer-drain-service-truck-owasso.webp
+
+Place: in Why Choose Us section
+Also add links TO this page from:
+
+index.html: add "Owasso plumber" link in service area section
+drain-cleaning/index.html: add "drain cleaning in Owasso" link near bottom
+sewer-line-repair/index.html: add "sewer line repair serving Owasso" near bottom
+emergency-plumber-tulsa/index.html: add "emergency plumber Owasso OK" in service area list
+
+All images width="100%" loading="lazy" with descriptive alt text. Show confirmation when done.

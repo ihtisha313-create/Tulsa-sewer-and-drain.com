@@ -366,3 +366,33 @@ id = "Od4Q9oE4ARV7T5QkN1KdI"
 uri = "file://images/broken-arrow-service-area.png"
 type = "image"
 title = "generated_image"
+
+[[generated]]
+id = "KFJI9SJ6UjotTnRaKpHGI"
+uri = "file://images/licensed-plumber-owasso-ok.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "iKUqronzV4WEPLU1p7JCt"
+uri = "file://images/sewer-camera-inspection-owasso-root-damage.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "CuUGgO3_uMq4jAyAiC9hi"
+uri = "file://images/drain-cleaning-before-after-owasso.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "QD9X_UiR30W2n2Uo9ePno"
+uri = "file://images/clay-sewer-pipe-root-intrusion-owasso.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "DvJvnEKUni3KBYZVZnT8n"
+uri = "file://images/tulsa-sewer-drain-service-truck-owasso.png"
+type = "image"
+title = "generated_image"
