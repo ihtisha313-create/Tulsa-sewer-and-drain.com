@@ -681,3 +681,31 @@ html, body { overflow-x:hidden; }
   pointer-events: none;
   user-select: none;
 }
+
+/* ===== Service Areas Nav Dropdown ===== */
+.nav-dropdown { position: relative; }
+.nav-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1a3a5c;
+  min-width: 200px;
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.nav-dropdown .dropdown-menu li { list-style: none; }
+.nav-dropdown .dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  color: #fff;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.nav-dropdown .dropdown-menu a:hover {
+  background: #e8640a;
+  color: #fff;
+}
+.nav-dropdown:hover .dropdown-menu { display: block; }

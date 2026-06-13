@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /attached_assets/
 Allow: /
 
 Sitemap: https://tulsaseweranddrain.com/sitemap.xml

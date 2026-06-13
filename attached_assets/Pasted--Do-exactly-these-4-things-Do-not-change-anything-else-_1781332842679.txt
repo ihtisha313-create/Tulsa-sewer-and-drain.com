@@ -1,0 +1,99 @@
+
+Do exactly these 4 things. Do not change anything else.
+FIX 1 — Create /thank-you/ page
+Create a new file thank-you/index.html using the same header, footer, nav, and CSS as all other pages on the site.
+Page content:
+Meta title: Thank You | Tulsa Sewer & Drain
+Meta description: Your request has been received. A licensed Tulsa plumber will call you back shortly.
+Canonical: https://tulsaseweranddrain.com/thank-you/
+Robots: noindex, nofollow
+
+H1: We Got Your Request — A Real Plumber Will Call You Shortly
+
+Body content:
+"Thanks for reaching out to Tulsa Sewer & Drain. 
+A licensed Oklahoma plumber — not a call center — 
+will call you back within 60 minutes during business 
+hours, or first thing in the morning for after-hours 
+submissions.
+
+What happens next:
+- We'll call the number you provided
+- We'll confirm your issue and give you a flat-rate 
+  quote over the phone
+- We'll schedule arrival — same day in most cases
+
+While you wait, you can also reach us directly:
+📞 (918) 555-0192 — available 24/7"
+
+Add a link back to homepage: "← Back to Home"
+Also add this GA4 conversion event script inside the <head>:
+html<script>
+  gtag('event', 'conversion', {
+    'event_category': 'form',
+    'event_label': 'quote_request_submitted'
+  });
+</script>
+Add noindex, nofollow to robots meta tag on this page only.
+
+FIX 2 — Point all forms to /thank-you/
+Find every form on the site that uses Web3Forms. Each form has a hidden input or redirect field. Add or update the redirect to:
+html<input type="hidden" name="_next" value="https://tulsaseweranddrain.com/thank-you/">
+Do this in every HTML file that contains a quote or contact form.
+
+FIX 3 — Add Service Areas to navigation
+In every HTML file across the site, find the main nav <ul> and add a Service Areas dropdown item after the existing nav links, before the "📞 Call Now" button:
+html<li class="nav-dropdown">
+  <a href="/service-areas/">Service Areas ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="/broken-arrow-plumber/">Broken Arrow</a></li>
+    <li><a href="/owasso-plumber/">Owasso</a></li>
+    <li><a href="/bixby-plumber/">Bixby</a></li>
+    <li><a href="/jenks-plumber/">Jenks</a></li>
+    <li><a href="/sand-springs-plumber/">Sand Springs</a></li>
+    <li><a href="/sapulpa-plumber/">Sapulpa</a></li>
+    <li><a href="/glenpool-plumber/">Glenpool</a></li>
+  </ul>
+</li>
+Also add this CSS to style.css for the dropdown:
+css.nav-dropdown { position: relative; }
+.nav-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1a3a5c;
+  min-width: 200px;
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.nav-dropdown .dropdown-menu li { list-style: none; }
+.nav-dropdown .dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  color: #fff;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.nav-dropdown .dropdown-menu a:hover { 
+  background: #e8640a; 
+  color: #fff; 
+}
+.nav-dropdown:hover .dropdown-menu { display: block; }
+
+FIX 4 — Rename "Book Online" to "Get a Free Quote"
+In ALL HTML files across the entire site, find every button or link that says exactly "Book Online" and replace with "Get a Free Quote".
+
+FIX 5 — Block attached_assets in robots.txt
+Open robots.txt and add this line:
+Disallow: /attached_assets/
+The final robots.txt should look like:
+User-agent: *
+Disallow: /attached_assets/
+Allow: /
+
+Sitemap: https://tulsaseweranddrain.com/sitemap.xml
+
+Show me confirmation of every file changed when done.
