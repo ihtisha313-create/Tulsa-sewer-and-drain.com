@@ -1,0 +1,59 @@
+Create a new page at bixby-plumber/index.html using the attached SEO package file.
+Match the exact same design, header, footer, nav, and CSS as broken-arrow-plumber/index.html.
+Use EXACTLY this content from the package word for word:
+
+Meta title, meta description, canonical URL
+H1 and all body content exactly as written
+All H2s and H3s in exact order
+All 3 JSON-LD schema blocks from Section 5 — do NOT add aggregateRating, do NOT add telephone field
+All 8 FAQ items exact text from Section 4
+CTA block from Section 8 exactly as written
+
+Internal links — use these exactly as in Section 6:
+
+"drain cleaning" → /drain-cleaning/
+"sewer line repair" → /sewer-line-repair/
+"sewer camera inspection" → /sewer-camera-inspection/
+"hydro jetting" → /hydro-jetting/
+"trenchless sewer repair" → /trenchless-sewer-repair-tulsa/
+"emergency plumbing, 24/7" → /emergency-plumber-tulsa/
+"Jenks" → /jenks-plumber/
+"Glenpool" → /glenpool-plumber/
+"Sapulpa" → /sapulpa-plumber/
+
+Generate and place these 5 images:
+Image 1: Licensed plumber truck arriving at residential driveway in Bixby OK suburb, sunny day, photorealistic
+
+Save as: /images/licensed-plumber-bixby-ok.webp
+
+Place: after H1 intro before first CTA
+Image 2: Technician viewing live sewer camera footage on tablet, residential setting, photorealistic
+
+Save as: /images/sewer-camera-inspection-bixby-ok.webp
+
+Place: in Services section after camera inspection description
+Image 3: High-pressure hydro jetting hose clearing drain line, professional equipment, photorealistic
+
+Save as: /images/hydro-jetting-bixby-ok.webp
+
+Place: in Services section after hydro jetting description
+Image 4: Before and after clay sewer pipe — cracked original vs repaired trenchless liner, photorealistic
+
+Save as: /images/trenchless-sewer-repair-bixby-ok.webp
+
+Place: in What Makes Bixby's Plumbing Different section
+Image 5: Tulsa metro service area map with Bixby highlighted, clean professional style
+
+Save as: /images/bixby-service-area-map.webp
+
+Place: in Areas We Serve Near Bixby section
+Also add links TO this page from:
+
+index.html: find "Bixby" plain text in service area section and make it link to /bixby-plumber/
+emergency-plumber-tulsa/index.html: add Bixby to the list of areas covered
+sewer-line-repair/index.html: add "Bixby" link near bottom service area mention
+broken-arrow-plumber/index.html: add "we also serve nearby Bixby" link in areas section
+owasso-plumber/index.html: add "we also serve nearby Bixby" link in areas section
+
+Also add /bixby-plumber/ to sitemap.xml with lastmod 2026-06-10.
+All images width="100%" loading="lazy" with exact alt text from Section 7. Show confirmation when done.
