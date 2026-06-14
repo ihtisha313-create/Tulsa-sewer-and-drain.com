@@ -1,0 +1,94 @@
+Do exactly these fixes. Do not build any new pages yet.
+
+FIX 1 — Remove dead nav dropdown links
+In every HTML file, find the Service Areas 
+dropdown in the nav. Remove these 4 links 
+that have no pages yet:
+- /jenks-plumber/
+- /sand-springs-plumber/
+- /sapulpa-plumber/
+- /glenpool-plumber/
+- /service-areas/
+
+Replace the entire dropdown with just the 
+3 working location pages:
+<li class="nav-dropdown">
+  <a href="#">Service Areas ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="/broken-arrow-plumber/">Broken Arrow</a></li>
+    <li><a href="/owasso-plumber/">Owasso</a></li>
+    <li><a href="/bixby-plumber/">Bixby</a></li>
+  </ul>
+</li>
+
+FIX 2 — Homepage footer links
+In index.html footer Service Area column,
+find plain text Broken Arrow and Owasso 
+and make them links:
+<li><a href="/broken-arrow-plumber/">Broken Arrow</a></li>
+<li><a href="/owasso-plumber/">Owasso</a></li>
+<li><a href="/bixby-plumber/">Bixby</a></li>
+
+FIX 3 — Add Bixby footer links on all pages
+In these files, find plain text "Bixby" in 
+the footer Service Area list and make it a link:
+drain-cleaning/index.html
+hydro-jetting/index.html
+sewer-camera-inspection/index.html
+sewer-line-repair/index.html
+trenchless-sewer-repair-tulsa/index.html
+plumbers-tulsa/index.html
+emergency-plumber-tulsa/index.html
+thank-you/index.html
+about/index.html
+contact/index.html
+privacy-policy/index.html
+terms-of-service/index.html
+404.html
+
+FIX 4 — Broken Arrow page footer
+In broken-arrow-plumber/index.html footer,
+find plain text Owasso and link it:
+<li><a href="/owasso-plumber/">Owasso</a></li>
+
+Also add Bixby as a link:
+<li><a href="/bixby-plumber/">Bixby</a></li>
+
+FIX 5 — plumbers-tulsa body cities
+Find this line in plumbers-tulsa/index.html:
+<li>Broken Arrow, Owasso, Bixby, 
+Jenks, Sand Springs</li>
+
+Replace with separate linked items:
+<li><a href="/broken-arrow-plumber/">
+Broken Arrow</a></li>
+<li><a href="/owasso-plumber/">Owasso</a></li>
+<li><a href="/bixby-plumber/">Bixby</a></li>
+<li>Jenks</li>
+<li>Sand Springs</li>
+
+FIX 6 — About page body city links
+In about/index.html, find the sentence 
+listing surrounding cities and add links 
+to the 3 that have pages:
+- "Broken Arrow" → /broken-arrow-plumber/
+- "Owasso" → /owasso-plumber/
+- "Bixby" → /bixby-plumber/
+
+FIX 7 — Emergency page bullet
+In emergency-plumber-tulsa/index.html,
+find the bullet mentioning "Broken Arrow,
+Owasso, and Bixby" and add links:
+- "Broken Arrow" → /broken-arrow-plumber/
+- "Owasso" → /owasso-plumber/
+- "Bixby" → /bixby-plumber/
+
+FIX 8 — Copyright year on location pages
+In broken-arrow-plumber/index.html and
+owasso-plumber/index.html, change:
+<span id="year">2025</span>
+to:
+<span id="year">2026</span>
+
+Show me confirmation of every file 
+changed when done.
