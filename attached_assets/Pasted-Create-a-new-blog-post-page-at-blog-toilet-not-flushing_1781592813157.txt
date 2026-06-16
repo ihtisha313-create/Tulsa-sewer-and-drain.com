@@ -1,0 +1,73 @@
+Create a new blog post page at 
+blog/toilet-not-flushing-all-the-way/index.html
+using the attached SEO package file.
+
+Use the same design, header, footer, nav, 
+and CSS as all other pages on the site.
+
+Use EXACTLY this content from the package:
+- Meta title, meta description, canonical URL
+- H1 and all body content word for word
+- All H2s and H3s in exact order
+- All 3 CTA blocks from Section 7
+- All 8 FAQ questions exact text
+- All internal links from Section 5:
+  "sewer camera inspection" → /sewer-camera-inspection/
+  "drain cleaning" → /drain-cleaning/
+  "sewer line repair" → /sewer-line-repair/
+  "emergency plumber" → /emergency-plumber-tulsa/
+
+Add the FAQPage schema from the package BUT:
+- Remove the entire aggregateRating block
+- Remove the telephone field from LocalBusiness schema
+
+Generate and place these 5 images:
+
+Image 1: Toilet tank lid removed showing 
+fill valve, float, and flapper chain clearly,
+photorealistic, educational
+Save as: /images/blog-toilet-tank-components.webp
+Place: after intro before first H2
+
+Image 2: Underside of toilet rim showing 
+jet holes with white mineral/calcium buildup,
+close-up, photorealistic
+Save as: /images/blog-toilet-rim-jets-buildup.webp
+Place: beside Cause 3 — Clogged Rim Jets section
+
+Image 3: Worn cracked rubber flapper next 
+to new replacement flapper side by side,
+photorealistic, educational comparison
+Save as: /images/blog-toilet-flapper-worn-vs-new.webp
+Place: beside Cause 2 — Flapper section
+
+Image 4: Flange plunger positioned correctly 
+over toilet drain opening, technique shown,
+photorealistic
+Save as: /images/blog-flange-plunger-toilet.webp
+Place: beside Step 5 in troubleshooting section
+
+Image 5: Tulsa plumber running sewer camera 
+inspection on residential drain line,
+photorealistic, professional
+Save as: /images/blog-sewer-camera-tulsa-plumber.webp
+Place: in When to Call a Plumber section
+
+Also add links FROM these pages TO this blog post:
+- drain-cleaning/index.html: add at bottom 
+  "Not sure if it's a clog or a tank issue? 
+  Read our toilet flushing guide →
+  /blog/toilet-not-flushing-all-the-way/"
+- sewer-line-repair/index.html: add same 
+  link in "first signs of sewer damage" area
+- index.html (homepage): add a small "From 
+  the Blog" section before the footer with 
+  a card linking to this post
+
+Also add this URL to sitemap.xml:
+https://tulsaseweranddrain.com/blog/toilet-not-flushing-all-the-way/
+with lastmod 2026-06-14
+
+All images width="100%" loading="lazy" 
+with exact alt text from Section 6.
+Show confirmation when done.
