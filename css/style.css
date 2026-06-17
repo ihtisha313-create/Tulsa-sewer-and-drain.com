@@ -709,3 +709,38 @@ html, body { overflow-x:hidden; }
   color: #fff;
 }
 .nav-dropdown:hover .dropdown-menu { display: block; }
+
+/* ===== Nav phone link ===== */
+.nav-phone {
+  color: var(--primary) !important;
+  font-weight: 700 !important;
+  white-space: nowrap;
+}
+.nav-phone:hover { color: var(--accent) !important; background: none !important; }
+
+/* ===== Footer social icons ===== */
+.footer-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+.footer-social { display:flex; gap:14px; margin-top:14px; }
+.footer-social-icon {
+  display:flex; align-items:center; justify-content:center;
+  width:34px; height:34px; border-radius:50%;
+  background:rgba(255,255,255,.12); color:rgba(255,255,255,.8);
+  transition: background .2s, color .2s;
+  text-decoration:none;
+}
+.footer-social-icon:hover { background:var(--accent); color:#fff; text-decoration:none; }
+
+/* ===== Mobile: hide nav-phone, show header-cta ===== */
+@media (max-width: 768px) {
+  .nav-phone { display: none; }
+  .header-cta { display: block !important; }
+  .main-nav.open .dropdown-menu {
+    display: block !important;
+    position: static;
+    background: rgba(255,255,255,.06);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .main-nav.open .dropdown-menu a { padding-left: 36px; font-size:.97rem; }
+}

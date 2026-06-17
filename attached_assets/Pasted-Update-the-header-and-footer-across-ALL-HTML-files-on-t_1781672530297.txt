@@ -1,0 +1,85 @@
+Update the header and footer across ALL HTML 
+files on the site. Use the attached mockup 
+file as the design reference.
+
+HEADER CHANGES:
+
+1. Keep the existing utility bar as is
+
+2. Replace the current nav links with this 
+   new structure:
+   - "Services ▾" dropdown containing:
+     Drain Cleaning → /drain-cleaning/
+     Sewer Line Repair → /sewer-line-repair/
+     Hydro Jetting → /hydro-jetting/
+     Trenchless Repair → /trenchless-sewer-repair-tulsa/
+     Sewer Camera Inspection → /sewer-camera-inspection/
+     Emergency Plumber → /emergency-plumber-tulsa/
+     Plumbers Tulsa → /plumbers-tulsa/
+   
+   - "Service Areas ▾" dropdown containing:
+     Broken Arrow → /broken-arrow-plumber/
+     Owasso → /owasso-plumber/
+     Bixby → /bixby-plumber/
+     View All Areas → /service-areas/
+   
+   - Blog → /blog/
+   - About → /about/
+   - Contact → /contact/
+   
+   - Phone number: (918) 992-4725
+   - CTA button: "Get a Free Quote" 
+     scrolls to quote form on same page
+
+3. Keep existing mobile toggle behavior
+
+FOOTER CHANGES:
+
+Replace entire footer with 4-column layout:
+
+Column 1 — Brand:
+- Logo + company name
+- "Tulsa's locally owned sewer & drain 
+  specialists. Flat-rate pricing, 
+  camera-verified work, 60-minute response."
+- Phone: (918) 992-4725
+- "Licensed Oklahoma Plumbers"
+- Social icon placeholders (Facebook, 
+  Instagram, Google) — no links yet
+
+Column 2 — Services:
+- Drain Cleaning → /drain-cleaning/
+- Sewer Line Repair → /sewer-line-repair/
+- Hydro Jetting → /hydro-jetting/
+- Trenchless Repair → /trenchless-sewer-repair-tulsa/
+- Sewer Camera Inspection → /sewer-camera-inspection/
+- Emergency Plumber → /emergency-plumber-tulsa/
+
+Column 3 — Service Areas:
+- Broken Arrow → /broken-arrow-plumber/
+- Owasso → /owasso-plumber/
+- Bixby → /bixby-plumber/
+- Jenks (plain text for now)
+- Sand Springs (plain text for now)
+- Sapulpa (plain text for now)
+- Glenpool (plain text for now)
+
+Column 4 — Company:
+- About → /about/
+- Contact → /contact/
+- Blog → /blog/
+- Privacy Policy → /privacy-policy/
+- Terms of Service → /terms-of-service/
+
+Footer bottom bar:
+© 2026 Tulsa Sewer & Drain. All rights 
+reserved. Licensed Oklahoma Plumbers. 
+Tulsa, OK. | Privacy Policy · Terms · Sitemap
+
+Keep all existing CSS color scheme 
+(navy #1a3a5c and orange #e8640a).
+Keep mobile responsive behavior.
+Do not change any page body content.
+
+Show me a preview of the updated header 
+and footer when done.
