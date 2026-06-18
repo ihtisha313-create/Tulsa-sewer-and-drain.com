@@ -1,0 +1,52 @@
+Create a new blog post page at blog/what-you-can-put-down-garbage-disposal/index.html using the attached SEO package file.
+Use the same header, footer, nav, and CSS as the existing blog post (toilet-not-flushing-all-the-way) and the rest of the site. Make sure the orange emergency banner and full header/footer are included exactly as they appear on every other page.
+Use EXACTLY this content from the package word for word:
+
+Meta title, meta description, canonical URL
+H1 and all body content from Section 3
+All H2s and H3s in exact order
+All 3 CTA blocks from Section 8
+Full FAQ schema from Section 5 (8 questions) — but remove any aggregateRating block and remove the telephone field, replace [PHONE] placeholders with (918) 992-4725
+
+Internal links — use exactly as listed in Section 6:
+
+"same-day drain cleaning" → /drain-cleaning/
+"hydro jetting service" → /hydro-jetting/
+"kitchen drain backup" or "emergency plumber" → /emergency-plumber-tulsa/
+"slow kitchen drain" → /drain-cleaning/ (note: /main-sewer-line-cleaning/ doesn't exist yet, use /drain-cleaning/ instead)
+"diagnose the blockage" / "inspect your drain line" → /sewer-camera-inspection/
+
+Generate and place these 5 images exactly as specified in Section 7, using the exact alt text given:
+Image 1: Kitchen sink with citrus peels and soft food scraps next to a garbage disposal unit, photorealistic
+
+Save as: /images/blog-garbage-disposal-safe-foods.webp
+
+Place: hero/top of page after H1
+Image 2: Clean two-column infographic style graphic — green checkmark column showing safe items, red X column showing items to avoid, simple icon-based design
+
+Save as: /images/blog-garbage-disposal-dos-donts.webp
+
+Place: after intro, before "What You CAN" section
+Image 3: Plumber inspecting or clearing a kitchen sink garbage disposal from underneath, photorealistic, professional
+
+Save as: /images/blog-plumber-garbage-disposal-clog.webp
+
+Place: near "What to Do When It Backs Up" section
+Image 4: Close-up of congealed grease buildup inside a residential drain pipe, photorealistic, educational
+
+Save as: /images/blog-grease-buildup-drain-pipe.webp
+
+Place: adjacent to the grease section
+Image 5: Ice cubes and lemon peels on a kitchen counter near a sink, photorealistic
+
+Save as: /images/blog-ice-citrus-disposal-cleaning.webp
+
+Place: near the cleaning/deodorizing section
+Also add this page to sitemap.xml with lastmod 2026-06-14.
+Add a new card for this post on blog/index.html (the blog listing page), using Image 1 as the card thumbnail, placed before or after the existing toilet post card.
+Add links FROM these pages TO this blog post:
+
+drain-cleaning/index.html: add near the bottom "learn what not to put down your garbage disposal → /blog/what-you-can-put-down-garbage-disposal/"
+service-areas/index.html: add "garbage disposal and kitchen drain services" link in the intro or CTA area
+
+Do not change any other content. Show me confirmation of every file changed when done.
