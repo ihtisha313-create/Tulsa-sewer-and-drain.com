@@ -1,0 +1,108 @@
+Build 2 new blog post pages using the attached SEO package files. Use the same header (including emergency banner), footer, nav, and CSS as the rest of the site for both.
+
+PAGE 1 — blog/shower-not-draining/index.html
+Use EXACTLY the content from shower-not-draining-page-package.md:
+
+Meta title, meta description, canonical URL
+H1 and all body content from Section 3 word for word
+All H2s and H3s in exact order
+FAQPage schema from Section 5 — remove any aggregateRating, remove telephone field
+CTA block from Section 8 — replace [PHONE] with (918) 992-4725
+
+Internal links from Section 6:
+
+"sewer camera inspection" → /sewer-camera-inspection/
+"hydro jetting" → /hydro-jetting/
+"sewer line repair" → /sewer-line-repair/
+"24/7 Tulsa plumbers" → /emergency-plumber-tulsa/
+"root intrusion" → /drain-cleaning/ (tree-root-removal page doesn't exist yet)
+
+Generate and place these 5 images from Section 7:
+
+Image 1: Technician kneeling in a shower using a hand snake, photorealistic
+
+Save as: /images/blog-shower-drain-snaking-tulsa.webp
+
+Place: hero, top of page
+Image 2: P-trap close-up diagram showing where clogs form, educational illustration style
+
+Save as: /images/blog-shower-ptrap-diagram.webp
+
+Place: near Common Causes section
+Image 3: Sewer camera monitor showing pipe interior with shower line clog visible
+
+Save as: /images/blog-camera-inspection-shower-line.webp
+
+Place: in "No Blockage" section
+Image 4: Baking soda and vinegar fizzing in a drain, close-up, photorealistic
+
+Save as: /images/blog-baking-soda-vinegar-shower-drain.webp
+
+Place: in DIY section
+Image 5: Hydro jetting equipment in use clearing a sewer line, photorealistic
+
+Save as: /images/blog-hydro-jetting-shower-line.webp
+
+Place: near pricing/CTA section
+
+PAGE 2 — blog/boiling-water-down-drain-safe/index.html
+Use EXACTLY the content from boiling-water-down-drain-page-package.docx:
+
+Meta title, meta description, canonical URL
+H1 and all body content from Section 3 word for word
+All H2s and H3s in exact order including "What Is the 135 Rule in Plumbing?"
+Both BlogPosting and FAQPage schema from Section 5 — keep as a @graph array exactly as written, but update the logo URL to https://tulsaseweranddrain.com/images/logo.svg, update datePublished and dateModified to 2026-06-18
+Both CTA blocks from Section 8 — replace [PHONE]/XXX-XXXX with (918) 992-4725
+
+Internal links from Section 6:
+
+"professional drain cleaning" → /drain-cleaning/
+"hydro jetting" → /hydro-jetting/
+"sewer camera inspection" → /sewer-camera-inspection/
+"drain cleaning Tulsa" → /drain-cleaning/
+
+Generate and place these 5 images from Section 7:
+
+Image 1: Hand pouring from a stainless-steel kettle into a kitchen sink drain, steam visible, photorealistic
+
+Save as: /images/blog-boiling-water-kettle-drain.webp
+
+Place: hero, top of page
+Image 2: Side-by-side comparison of PVC drain pipe vs cast iron drain pipe under a sink cabinet, photorealistic
+
+Save as: /images/blog-pvc-vs-cast-iron-pipe.webp
+
+Place: after pipe material section
+Image 3: Box of baking soda and bottle of white vinegar next to a bathroom sink drain, photorealistic
+
+Save as: /images/blog-baking-soda-vinegar-alternative.webp
+
+Place: near Safer Alternatives section
+Image 4: Plumber kneeling under a kitchen sink cabinet with a drain snake, work light visible, photorealistic
+
+Save as: /images/blog-plumber-drain-snake-kitchen.webp
+
+Place: near the plumber CTA
+Image 5: Macro photo of a drain fly near a drain opening, photorealistic
+
+Save as: /images/blog-drain-fly-bathroom-sink.webp
+
+Place: in drain flies section
+
+FOR BOTH PAGES:
+
+Add both URLs to sitemap.xml with lastmod 2026-06-18:
+
+https://tulsaseweranddrain.com/blog/shower-not-draining/
+
+https://tulsaseweranddrain.com/blog/boiling-water-down-drain-safe/
+Add 2 new cards to blog/index.html for these posts, using Image 1 from each as the thumbnail
+Add cross-links between these two new posts and the existing posts:
+
+drain-cleaning/index.html: add "shower not draining" link → /blog/shower-not-draining/
+drain-cleaning/index.html: add sidebar tip "Not sure if boiling water is safe for your pipes? Read this first" → /blog/boiling-water-down-drain-safe/
+blog/shower-not-draining/ and blog/boiling-water-down-drain-safe/ should link to each other naturally where boiling water or shower draining is mentioned in either post
+
+
+
+Do not change any other content. Show me confirmation of every file changed when done.
