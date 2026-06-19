@@ -1,0 +1,87 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "name": "Tulsa Sewer & Drain",
+  "description": "Agent skills for discovering plumbing services, service areas, and requesting quotes from Tulsa Sewer & Drain.",
+  "url": "https://tulsaseweranddrain.com/",
+  "skills": [
+    {
+      "name": "list_services",
+      "type": "content",
+      "description": "Returns the full list of sewer and drain services offered, with URLs.",
+      "url": "https://tulsaseweranddrain.com/",
+      "data": {
+        "services": [
+          { "name": "Drain Cleaning", "url": "https://tulsaseweranddrain.com/drain-cleaning/" },
+          { "name": "Sewer Line Repair", "url": "https://tulsaseweranddrain.com/sewer-line-repair/" },
+          { "name": "Hydro Jetting", "url": "https://tulsaseweranddrain.com/hydro-jetting/" },
+          { "name": "Trenchless Sewer Repair", "url": "https://tulsaseweranddrain.com/trenchless-sewer-repair-tulsa/" },
+          { "name": "Sewer Camera Inspection", "url": "https://tulsaseweranddrain.com/sewer-camera-inspection/" },
+          { "name": "Emergency Plumber 24/7", "url": "https://tulsaseweranddrain.com/emergency-plumber-tulsa/" }
+        ]
+      }
+    },
+    {
+      "name": "list_service_areas",
+      "type": "content",
+      "description": "Returns all cities and areas served by Tulsa Sewer & Drain.",
+      "url": "https://tulsaseweranddrain.com/service-areas/",
+      "data": {
+        "areas": [
+          { "city": "Tulsa", "url": "https://tulsaseweranddrain.com/plumbers-tulsa/" },
+          { "city": "Broken Arrow", "url": "https://tulsaseweranddrain.com/broken-arrow-plumber/" },
+          { "city": "Owasso", "url": "https://tulsaseweranddrain.com/owasso-plumber/" },
+          { "city": "Bixby", "url": "https://tulsaseweranddrain.com/bixby-plumber/" },
+          { "city": "Jenks", "url": "https://tulsaseweranddrain.com/jenks-plumber/" },
+          { "city": "Catoosa", "url": "https://tulsaseweranddrain.com/catoosa-plumber/" },
+          { "city": "Sand Springs", "url": "https://tulsaseweranddrain.com/sand-springs-plumber/" },
+          { "city": "Glenpool", "url": "https://tulsaseweranddrain.com/glenpool-plumber/" },
+          { "city": "Sapulpa", "url": "https://tulsaseweranddrain.com/sapulpa-plumber/" },
+          { "city": "Kellyville", "url": "https://tulsaseweranddrain.com/kellyville-plumber/" }
+        ]
+      }
+    },
+    {
+      "name": "get_contact_info",
+      "type": "content",
+      "description": "Returns business contact details including phone number, hours, and quote form URL.",
+      "url": "https://tulsaseweranddrain.com/contact/",
+      "data": {
+        "phone": "(918) 992-4725",
+        "tel": "+19189924725",
+        "hours": "24/7 — 365 days a year",
+        "response_time": "60-minute emergency arrival goal",
+        "quote_form": "https://tulsaseweranddrain.com/contact/",
+        "license": "Licensed Oklahoma Plumbers"
+      }
+    },
+    {
+      "name": "request_quote",
+      "type": "form",
+      "description": "Submit a plumbing service quote request. Accepts name, phone, email, service type, and optional message.",
+      "url": "https://tulsaseweranddrain.com/contact/",
+      "input_schema": {
+        "type": "object",
+        "required": ["name", "phone", "email", "service"],
+        "properties": {
+          "name":    { "type": "string", "description": "Customer full name" },
+          "phone":   { "type": "string", "description": "Customer phone number" },
+          "email":   { "type": "string", "format": "email", "description": "Customer email address" },
+          "service": {
+            "type": "string",
+            "description": "Type of plumbing service needed",
+            "enum": [
+              "Drain Cleaning",
+              "Sewer Line Repair",
+              "Hydro Jetting",
+              "Trenchless Sewer Repair",
+              "Sewer Camera Inspection",
+              "Emergency Plumber",
+              "Other / Not Sure"
+            ]
+          },
+          "message": { "type": "string", "description": "Optional description of the plumbing problem" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://tulsaseweranddrain.com/",
+      "https://iana.org/assignments/link-relations/service-doc": [
+        { "href": "https://tulsaseweranddrain.com/about/" }
+      ],
+      "https://iana.org/assignments/link-relations/describedby": [
+        { "href": "https://tulsaseweranddrain.com/sitemap.xml", "type": "application/xml" }
+      ]
+    },
+    {
+      "anchor": "https://tulsaseweranddrain.com/contact/",
+      "https://iana.org/assignments/link-relations/service-doc": [
+        { "href": "https://tulsaseweranddrain.com/contact/" }
+      ],
+      "type": ["application/x-www-form-urlencoded"],
+      "title": ["Quote & Contact Form — processed by Web3Forms"]
+    }
+  ]
+}

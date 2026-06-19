@@ -109,4 +109,101 @@
     });
 
   });
+
+  /* ===== WebMCP — expose business tools to AI agents ===== */
+  if (navigator.modelContext && navigator.modelContext.provideContext) {
+    navigator.modelContext.provideContext({
+      tools: [
+        {
+          name: "get_contact_info",
+          description: "Returns the business phone number, hours of operation, and quote form URL for Tulsa Sewer & Drain.",
+          inputSchema: { type: "object", properties: {} },
+          execute: function() {
+            return {
+              business: "Tulsa Sewer & Drain",
+              phone: "(918) 992-4725",
+              tel: "+19189924725",
+              hours: "24/7 — 365 days a year",
+              emergency_response: "60-minute arrival goal",
+              quote_form: window.location.origin + "/contact/",
+              license: "Licensed & Insured Oklahoma Plumbers"
+            };
+          }
+        },
+        {
+          name: "list_services",
+          description: "Returns all sewer and drain plumbing services offered by Tulsa Sewer & Drain with their page URLs.",
+          inputSchema: { type: "object", properties: {} },
+          execute: function() {
+            return {
+              services: [
+                { name: "Drain Cleaning", url: window.location.origin + "/drain-cleaning/", price_range: "$100–$300" },
+                { name: "Sewer Line Repair", url: window.location.origin + "/sewer-line-repair/" },
+                { name: "Hydro Jetting", url: window.location.origin + "/hydro-jetting/", price_range: "$350–$600" },
+                { name: "Trenchless Sewer Repair", url: window.location.origin + "/trenchless-sewer-repair-tulsa/", price_range: "$1,500–$5,000+" },
+                { name: "Sewer Camera Inspection", url: window.location.origin + "/sewer-camera-inspection/", price_range: "$150–$300" },
+                { name: "Emergency Plumber 24/7", url: window.location.origin + "/emergency-plumber-tulsa/", price_range: "$150–$250 + repairs" }
+              ]
+            };
+          }
+        },
+        {
+          name: "check_service_area",
+          description: "Check whether a given city is in the Tulsa Sewer & Drain service area and return the relevant city page URL.",
+          inputSchema: {
+            type: "object",
+            required: ["city"],
+            properties: {
+              city: { type: "string", description: "City name to check, e.g. 'Broken Arrow' or 'Sand Springs'" }
+            }
+          },
+          execute: function(args) {
+            var areas = {
+              "tulsa":         "/plumbers-tulsa/",
+              "broken arrow":  "/broken-arrow-plumber/",
+              "owasso":        "/owasso-plumber/",
+              "bixby":         "/bixby-plumber/",
+              "jenks":         "/jenks-plumber/",
+              "catoosa":       "/catoosa-plumber/",
+              "sand springs":  "/sand-springs-plumber/",
+              "glenpool":      "/glenpool-plumber/",
+              "sapulpa":       "/sapulpa-plumber/",
+              "kellyville":    "/kellyville-plumber/"
+            };
+            var key = (args.city || '').toLowerCase().trim();
+            var path = areas[key];
+            if (path) {
+              return { served: true, city: args.city, url: window.location.origin + path };
+            }
+            var tulsa_metro = ["tulsa", "broken arrow", "owasso", "bixby", "jenks", "catoosa",
+                               "sand springs", "glenpool", "sapulpa", "kellyville"];
+            return {
+              served: "unknown",
+              message: "Call (918) 992-4725 to confirm service to " + args.city + ". We cover the full Tulsa metro.",
+              known_areas: tulsa_metro,
+              service_areas_url: window.location.origin + "/service-areas/"
+            };
+          }
+        },
+        {
+          name: "get_pricing",
+          description: "Returns typical pricing ranges for common plumbing services offered by Tulsa Sewer & Drain.",
+          inputSchema: { type: "object", properties: {} },
+          execute: function() {
+            return {
+              note: "All jobs quoted flat-rate upfront before work begins. Prices vary by access, line length, and conditions.",
+              pricing: [
+                { service: "Drain Cleaning",            typical: "$100–$300" },
+                { service: "Sewer Camera Inspection",   typical: "$150–$300" },
+                { service: "Hydro Jetting",             typical: "$350–$600" },
+                { service: "Trenchless Sewer Repair",   typical: "$1,500–$5,000+" },
+                { service: "Emergency Service Call",    typical: "$150–$250 + repairs" }
+              ]
+            };
+          }
+        }
+      ]
+    });
+  }
+
 })();
