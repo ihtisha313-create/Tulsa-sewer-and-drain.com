@@ -1,0 +1,105 @@
+Build 2 new location pages using the attached SEO package files. Use the same header (with emergency banner), footer, nav, and CSS as broken-arrow-plumber/index.html for both.
+
+PAGE 1 — sapulpa-plumber/index.html
+Use EXACTLY the content from sapulpa-plumber-page-package.md:
+
+Meta title, meta description, H1, all body content from Section 3 word for word
+All H2s/H3s in exact order
+Both CTA blocks from Section 8 — replace [XXX-XXXX] with (918) 992-4725
+All FAQ questions from Section 4
+Add the FAQPage and Service schema from Section 5 — but ADD a LocalBusiness/Plumber schema using the same structure as broken-arrow-plumber's page, WITHOUT any aggregateRating block and WITHOUT a telephone field
+
+Internal links from Section 6:
+
+"drain cleaning service" → /drain-cleaning/
+"hydro jetting" → /hydro-jetting/
+"trenchless sewer repair" → /trenchless-sewer-repair-tulsa/
+"sewer camera inspection" → /sewer-camera-inspection/
+"slab leak repair" → /sewer-line-repair/ (slab-leak-repair-tulsa page doesn't exist yet, use this instead)
+"Kellyville" → /kellyville-plumber/
+
+Generate and place these 5 images from Section 7 with exact alt text:
+
+Image 1: Licensed plumber inspecting sewer line in Sapulpa OK residential backyard, photorealistic
+
+Save as: /images/plumber-sapulpa-ok-sewer-inspection.webp
+
+Image 2: Sewer camera inspection screen showing cracked clay pipe, photorealistic
+
+Save as: /images/sewer-camera-clay-pipe-sapulpa.webp
+
+Image 3: Hydro jetting equipment cleaning drain line, photorealistic
+
+Save as: /images/hydro-jetting-drain-cleaning-sapulpa.webp
+
+Image 4: Trenchless pipe lining repair with minimal yard disturbance, photorealistic
+
+Save as: /images/trenchless-sewer-repair-sapulpa.webp
+
+Image 5: Service van parked on residential Sapulpa street, photorealistic
+
+Save as: /images/tulsa-sewer-drain-truck-sapulpa.webp
+
+PAGE 2 — kellyville-plumber/index.html
+Use EXACTLY the content from kellyville-plumber-page.md:
+
+Meta title, meta description, H1, all body content from Section 3 word for word
+All H2s/H3s in exact order
+CTA block from Section 8 — replace [XXX-XXXX] with (918) 992-4725
+All 8 FAQ questions from Section 4
+
+Use the Plumber + FAQPage schema from Section 5 BUT:
+
+Remove the entire aggregateRating block
+Remove the telephone field
+Replace logo.jpg with logo.svg in the image field
+
+Internal links from Section 6:
+
+"sewer camera inspection" → /sewer-camera-inspection/
+"trenchless options that avoid tearing up your yard" → /trenchless-sewer-repair-tulsa/
+"tree root removal" → /drain-cleaning/ (tree-root-removal page doesn't exist yet, use this instead)
+"slab leak repair & leak detection" → /sewer-line-repair/ (those specific pages don't exist yet)
+"emergency plumbing" → /emergency-plumber-tulsa/
+"Sapulpa" → /sapulpa-plumber/
+"Glenpool" and "Sand Springs" → plain text, no link (pages don't exist yet)
+
+Generate and place these 5 images from Section 7 with exact alt text:
+
+Image 1: Technician arriving at Kellyville-area home in branded van, photorealistic
+
+Save as: /images/plumber-kellyville-ok-arrival.webp
+
+Image 2: Sewer camera inspection in progress, photorealistic
+
+Save as: /images/sewer-camera-inspection-kellyville.webp
+
+Image 3: Before/after photo of cleared root-intruded pipe, photorealistic
+
+Save as: /images/tree-root-removal-kellyville.webp
+
+Image 4: Flat-rate pricing graphic/quote sheet, clean professional design
+
+Save as: /images/flat-rate-pricing-kellyville.webp
+
+Image 5: Map graphic showing Kellyville + nearby service areas, clean professional style
+
+Save as: /images/kellyville-service-area-map.webp
+
+FOR BOTH PAGES:
+
+Add both URLs to sitemap.xml with lastmod 2026-06-18:
+
+https://tulsaseweranddrain.com/sapulpa-plumber/
+
+https://tulsaseweranddrain.com/kellyville-plumber/
+Update service-areas/index.html — change the Sapulpa card from "Coming Soon" to a live link, and change Kellyville from grayed-out to active with a proper description and link
+Add cross-links between Sapulpa and Kellyville pages to each other (they're neighboring cities)
+Add links FROM these pages TO the new pages:
+
+broken-arrow-plumber/index.html, owasso-plumber/index.html, bixby-plumber/index.html: add Sapulpa and Kellyville to their "Areas We Also Serve" sections if present
+drain-cleaning/index.html: add "drain cleaning in Sapulpa" link near bottom
+
+
+
+All images width="100%" loading="lazy". Show confirmation of every file changed when done.
