@@ -1,0 +1,110 @@
+Build 2 new location pages using the attached SEO package files. Use the same header (with emergency banner), footer, nav, and CSS as broken-arrow-plumber/index.html for both.
+
+PAGE 1 — jenks-plumber/index.html
+Use EXACTLY the content from jenks-plumber-page-package.md:
+
+Meta title, meta description, H1, all body content from Section 3 word for word
+All H2s in exact order including the 5-step "What Happens When You Call Us"
+All 8 FAQ questions from Section 4
+CTA block from Section 8 — replace (918) XXX-XXXX with (918) 992-4725
+
+Use the LocalBusiness and FAQPage schema from Section 5 BUT:
+
+Remove the entire aggregateRating block
+Remove the telephone field
+Change the image field to https://tulsaseweranddrain.com/images/logo.svg
+
+Internal links from Section 6:
+
+"sewer camera inspection" → /sewer-camera-inspection/
+"trenchless sewer line repair" → /trenchless-sewer-repair-tulsa/
+"hydro jetting" → /hydro-jetting/
+"emergency plumbing" → /emergency-plumber-tulsa/
+"tree root removal from sewer lines" → /drain-cleaning/ (dedicated page doesn't exist yet)
+"Bixby" → /bixby-plumber/
+"Sapulpa" → /sapulpa-plumber/
+
+Generate and place these 5 images from Section 7 with exact alt text:
+
+Image 1: Technician at a Jenks home, branded van visible, photorealistic
+
+Save as: /images/plumber-jenks-ok-residential.webp
+
+Image 2: Sewer camera inspection screen/monitor, photorealistic
+
+Save as: /images/sewer-camera-inspection-jenks.webp
+
+Image 3: Before/after of a cleared drain or repaired pipe, photorealistic
+
+Save as: /images/drain-cleaning-results-jenks.webp
+
+Image 4: Map graphic of Jenks + surrounding service area, clean professional style
+
+Save as: /images/jenks-service-area-map.webp
+
+Image 5: Technician with warranty paperwork, photorealistic
+
+Save as: /images/written-warranty-jenks-plumber.webp
+
+PAGE 2 — catoosa-plumber/index.html
+Use EXACTLY the content from catoosa-plumber-page-package.md:
+
+Meta title, meta description, H1, all body content from Section 3 word for word
+All H2s in exact order
+All 8 FAQ questions from Section 4
+CTA block from Section 8 — replace [PHONE] with (918) 992-4725 everywhere it appears in body content and CTAs
+
+Use the Plumber and FAQPage schema from Section 5 BUT:
+
+Remove the entire aggregateRating block (including the [INSERT REVIEW COUNT] placeholder)
+Remove the telephone field entirely
+Change the image field to https://tulsaseweranddrain.com/images/logo.svg
+Keep address as Tulsa, OK only — no street address
+
+Internal links from Section 6:
+
+"sewer camera inspection" → /sewer-camera-inspection/
+"trenchless sewer repair" → /trenchless-sewer-repair-tulsa/
+"hydro jetting" → /hydro-jetting/
+"24/7 emergency plumbing" → /emergency-plumber-tulsa/
+"Broken Arrow" → /broken-arrow-plumber/
+
+Generate and place these 5 images from Section 7 with exact alt text:
+
+Image 1: Technician arriving at a Catoosa home, photorealistic
+
+Save as: /images/plumber-catoosa-ok-arrival.webp
+
+Image 2: Camera inspection equipment/monitor, photorealistic
+
+Save as: /images/sewer-camera-inspection-catoosa.webp
+
+Image 3: Hydro jetting truck in action, photorealistic
+
+Save as: /images/hydro-jetting-truck-catoosa.webp
+
+Image 4: Trenchless repair before/after, photorealistic
+
+Save as: /images/trenchless-sewer-repair-catoosa.webp
+
+Image 5: Service area map covering Catoosa, clean professional style
+
+Save as: /images/catoosa-service-area-map.webp
+
+FOR BOTH PAGES:
+
+Add both URLs to sitemap.xml with lastmod 2026-06-18:
+
+https://tulsaseweranddrain.com/jenks-plumber/
+
+https://tulsaseweranddrain.com/catoosa-plumber/
+Update service-areas/index.html — change Jenks and Catoosa cards from "Coming Soon" to live links with proper descriptions
+Add cross-links: jenks-plumber should link to bixby-plumber and sapulpa-plumber; catoosa-plumber should link to broken-arrow-plumber and owasso-plumber (as specified in each package's internal linking plan)
+Update the nav dropdown "Service Areas" across the ENTIRE site to include Jenks and Catoosa as live links (remove from any "coming soon" styling)
+Add links FROM these existing pages TO the new pages:
+
+emergency-plumber-tulsa/index.html: add "serving Jenks and surrounding areas" mention with link
+
+
+
+All images width="100%" loading="lazy". Show confirmation of every file changed when done.
