@@ -1,0 +1,109 @@
+Build 2 new location pages using the attached SEO package files. Use the same header (with emergency banner), footer, nav, and CSS as broken-arrow-plumber/index.html for both.
+
+PAGE 1 — sand-springs-plumber/index.html
+Use EXACTLY the content from sand-springs-plumber-page-package.md:
+
+Meta title, meta description, H1, all body content from Section 3 word for word
+All 4 H3 service sections, "What We Know About Sand Springs" section, full pricing table
+All 8 FAQ questions from Section 4
+All 3 CTA blocks from Section 8 — replace [PHONE] with (918) 992-4725 everywhere
+
+Use the Plumber and FAQPage schema from Section 5 BUT:
+
+Remove the entire aggregateRating block
+Remove the telephone field
+Change image field to https://tulsaseweranddrain.com/images/logo.svg
+Remove the postalCode field, keep address as Tulsa, OK only
+
+Internal links from Section 6:
+
+"professional drain cleaning" → /drain-cleaning/
+"sewer camera inspection" → /sewer-camera-inspection/
+"hydro jetting" → /hydro-jetting/
+"trenchless sewer repair" → /trenchless-sewer-repair-tulsa/
+"emergency plumbing" → /emergency-plumber-tulsa/
+
+Generate and place these 5 images from Section 7 with exact alt text:
+
+Image 1: Licensed plumber inspecting sewer cleanout in residential Sand Springs backyard, photorealistic
+
+Save as: /images/plumber-sand-springs-ok-cleanout.webp
+
+Image 2: Sewer camera monitor showing live pipe interior footage, photorealistic
+
+Save as: /images/sewer-camera-inspection-sand-springs.webp
+
+Image 3: Hydro jetting nozzle action shot, photorealistic
+
+Save as: /images/hydro-jetting-sand-springs-ok.webp
+
+Image 4: Before/after split blocked vs cleared pipe, photorealistic
+
+Save as: /images/drain-cleaning-before-after-sand-springs.webp
+
+Image 5: Map graphic showing Sand Springs area near Arkansas River, clean professional style
+
+Save as: /images/sand-springs-service-area-map.webp
+
+PAGE 2 — glenpool-plumber/index.html
+Use EXACTLY the content from glenpool-plumber-page-package.docx:
+
+Meta title, meta description, H1, all body content word for word
+All 5 H3 service sections, "Glenpool Plumbing — What We See Here" section, "How It Works" 5-step section
+All 8 FAQ questions
+Both CTA blocks — replace (INSERT NUMBER) with (918) 992-4725
+
+Use the @graph schema BUT:
+
+Remove the entire aggregateRating block (including INSERT-COUNT placeholder)
+Remove the telephone field (INSERT-PHONE placeholder)
+Change @id from #organization to #business to match the rest of the site's schema convention
+Build out the full FAQPage schema using all 8 Q&A pairs from Section 4 (the docx references a "companion chat output" that doesn't exist — generate the FAQPage schema directly from the 8 FAQs already written in Section 4)
+
+Internal links:
+
+"drain cleaning" → /drain-cleaning/
+"hydro jetting" → /hydro-jetting/
+"trenchless sewer repair" → /trenchless-sewer-repair-tulsa/
+"sewer camera inspection" → /sewer-camera-inspection/
+"slab leak detection" → /sewer-line-repair/ (dedicated slab leak page doesn't exist yet)
+
+Generate and place these 5 images with exact alt text from Section 7:
+
+Image 1: Tech working at Glenpool residential property, photorealistic
+
+Save as: /images/plumber-glenpool-ok-residential.webp
+
+Image 2: Sewer camera fed into cleanout at Glenpool home, photorealistic
+
+Save as: /images/sewer-camera-inspection-glenpool.webp
+
+Image 3: Red clay soil with visible root intrusion in sewer pipe, photorealistic
+
+Save as: /images/tree-root-intrusion-glenpool-clay-soil.webp
+
+Image 4: Before/after trenchless vs excavated yard, photorealistic
+
+Save as: /images/trenchless-sewer-repair-glenpool.webp
+
+Image 5: Service van parked at Glenpool neighborhood home, photorealistic
+
+Save as: /images/tulsa-sewer-drain-van-glenpool.webp
+
+FOR BOTH PAGES:
+
+Add both URLs to sitemap.xml with lastmod 2026-06-18:
+
+https://tulsaseweranddrain.com/sand-springs-plumber/
+
+https://tulsaseweranddrain.com/glenpool-plumber/
+Update service-areas/index.html — change Sand Springs and Glenpool cards from "Coming Soon" to live links with proper descriptions. This completes all 9 cities on this hub page.
+Update the "Service Areas ▾" nav dropdown across the ENTIRE site to include all 9 cities now: Broken Arrow, Owasso, Bixby, Sapulpa, Kellyville, Jenks, Catoosa, Sand Springs, Glenpool — plus "View All Areas" linking to /service-areas/
+Add cross-links per each package's internal linking plan — sand-springs-plumber should link to nearby cities, glenpool-plumber should link to Jenks and Bixby as neighbors
+Add links FROM existing pages per each package's Section 6:
+
+homepage, drain-cleaning, sewer-camera-inspection, emergency-plumber-tulsa, trenchless-sewer-repair-tulsa pages should reference Sand Springs and Glenpool where noted
+
+
+
+All images width="100%" loading="lazy". Show confirmation of every file changed when done.
