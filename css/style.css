@@ -295,6 +295,7 @@ li { margin-bottom:.5em; }
   transition:opacity .25s;
 }
 .nav-overlay.active { display:block; opacity:1; }
+.main-nav-header { display:none; }
 
 /* ===== Hero ===== */
 .hero {
