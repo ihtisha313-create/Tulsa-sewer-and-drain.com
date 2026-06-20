@@ -1,0 +1,109 @@
+Build 2 new sub-service pages using the attached SEO package files. Use the same header (with emergency banner), footer, nav, and CSS as drain-cleaning/index.html for both.
+
+PAGE 1 — main-sewer-line-cleaning/index.html
+Use EXACTLY the content from main-sewer-line-cleaning-page-package.md:
+
+Meta title, meta description, H1, all body content from Section 3 word for word
+All H2/H3 sections including the 4 cause subsections and 4 method subsections
+"What to Do Right Now While You Wait" 5-step list
+All 8 FAQ questions from Section 4
+Both CTA blocks from Section 8 — replace [PHONE NUMBER] with (918) 992-4725
+
+Use the schema array from Section 5 BUT:
+
+Remove the entire aggregateRating block
+Remove the telephone field entirely
+Add areaServed as an array of City objects (Tulsa, Broken Arrow, Owasso, Bixby, Sand Springs, Jenks, Sapulpa, Glenpool, Catoosa, Kellyville) rather than a flat string array, matching the schema style used on other pages
+
+Internal links from Section 6:
+
+"hydro jetting" → /hydro-jetting/
+"sewer camera inspection" → /sewer-camera-inspection/
+"sewer line repair" → /sewer-line-repair/
+"tree root removal from sewer lines" → /drain-cleaning/ (dedicated page doesn't exist yet)
+"drain cleaning services" → /drain-cleaning/
+
+Generate and place these 5 images from Section 7 with exact alt text:
+
+Image 1: Technician running camera cable into sewer cleanout cap in Tulsa backyard
+
+Save as: /images/main-sewer-line-camera-inspection-tulsa.webp
+
+Image 2: Camera footage screenshot showing tree root mass inside pipe
+
+Save as: /images/tree-root-intrusion-sewer-camera-tulsa.webp
+
+Image 3: Hydro jetting nozzle with high-pressure water stream inside pipe
+
+Save as: /images/hydro-jetting-main-sewer-line-tulsa.webp
+
+Image 4: Split-screen before/after camera footage roots vs clean pipe
+
+Save as: /images/before-after-sewer-line-cleaning-tulsa.webp
+
+Image 5: Midtown Tulsa street with mature post oaks lining sidewalk
+
+Save as: /images/mature-oak-trees-midtown-tulsa.webp
+
+PAGE 2 — sewer-backup-cleanup/index.html
+Use EXACTLY the content from sewer-backup-cleanup-page-package.md:
+
+Meta title, meta description, H1, all body content word for word (phone number 918-992-4725 already correct throughout)
+All H2/H3 sections including 3 cause subsections
+"Stop — What to Do Right Now Before We Arrive" 5-step list
+4-step "How We Clear a Sewer Backup" process
+Pricing table exactly as written
+All 5 FAQ questions from Section 4 (note: package shows 4 visible, check full FAQ schema in Section 5 for the complete set of 5)
+
+Use the schema array from Section 5 exactly as written, including the OfferCatalog structure — this package already has no aggregateRating and uses the real phone number correctly, so minimal changes needed. Just verify no placeholder text remains.
+Internal links from Section 6:
+
+"hydro jetting service" → /hydro-jetting/
+"sewer camera inspection" → /sewer-camera-inspection/
+"sewer line repair" → /sewer-line-repair/
+"professional drain cleaning" → /drain-cleaning/
+"emergency plumber in Tulsa" → /emergency-plumber-tulsa/
+
+Generate and place these 5 images from Section 7 with exact alt text:
+
+Image 1: Technician inserting sewer camera into main line cleanout
+
+Save as: /images/sewer-camera-inspection-tulsa-cleanout.webp
+
+Image 2: Hydro jetting nozzle clearing blocked sewer pipe
+
+Save as: /images/hydro-jetting-sewer-backup-tulsa.webp
+
+Image 3: Floor drain with sewage backup visible in Tulsa home
+
+Save as: /images/sewage-backup-floor-drain-tulsa-home.webp
+
+Image 4: Sewer camera monitor showing oak tree root intrusion in clay pipe
+
+Save as: /images/tree-root-sewer-line-camera-view-tulsa.webp
+
+Image 5: Service truck parked in Midtown Tulsa residential neighborhood
+
+Save as: /images/tulsa-sewer-drain-truck-midtown.webp
+
+FOR BOTH PAGES:
+
+Add both URLs to sitemap.xml with lastmod 2026-06-18:
+
+https://tulsaseweranddrain.com/main-sewer-line-cleaning/
+
+https://tulsaseweranddrain.com/sewer-backup-cleanup/
+Add cross-links between these two pages — main-sewer-line-cleaning should reference sewer-backup-cleanup for active emergencies, and sewer-backup-cleanup should reference main-sewer-line-cleaning for non-emergency maintenance
+Add links FROM existing pages per each package's Section 6:
+
+drain-cleaning/index.html: add "main sewer line cleaning" link when escalating from fixture clogs
+hydro-jetting/index.html: add "main sewer line cleaning" link
+sewer-camera-inspection/index.html: add "main sewer line cleaning" link
+emergency-plumber-tulsa/index.html: add both "main sewer line backup" and "sewer backup emergency" links
+sewer-line-repair/index.html: add links to both new pages
+homepage: add "sewer backup cleanup" to emergency services list
+
+
+
+These are sub-service pages, not top-nav items — do not add them to the main Services dropdown, but they should appear as related/related-service links across the relevant existing pages.
+All images width="100%" loading="lazy". Show confirmation of every file changed when done.
