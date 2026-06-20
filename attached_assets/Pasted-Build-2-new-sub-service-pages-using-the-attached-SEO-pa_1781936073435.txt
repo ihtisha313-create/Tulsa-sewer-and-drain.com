@@ -1,0 +1,110 @@
+Build 2 new sub-service pages using the attached SEO package files. Use the same header (with emergency banner), footer, nav, and CSS as drain-cleaning/index.html for both.
+
+PAGE 1 — slab-leak-repair-tulsa/index.html
+Use EXACTLY the content from slab-leak-repair-tulsa-page-package.md:
+
+Meta title, meta description, H1, all body content from Section 3 word for word
+All H2/H3 sections including 2-step repair process
+All 8 FAQ questions from Section 4
+CTA block from Section 8 — replace [INSERT PHONE NUMBER] with (918) 992-4725
+
+Use the schema from Section 5 BUT:
+
+Remove the entire aggregateRating block from the Plumber schema
+Remove the telephone field from both the Plumber schema and the Service schema's provider
+Change image field to https://tulsaseweranddrain.com/images/logo.svg
+
+Internal links from Section 6 — but redirect these 2 since the pages don't exist yet:
+
+"leak detection services" → /sewer-line-repair/ (leak-detection-tulsa page doesn't exist yet)
+"24/7 emergency plumbing" → /emergency-plumber-tulsa/
+"trenchless sewer repair" → /trenchless-sewer-repair-tulsa/
+"upfront, flat-rate pricing" → remove this link, keep as plain text (pricing page doesn't exist yet)
+"hundreds of 5-star reviews" → remove this link, keep as plain text (reviews page doesn't exist yet)
+
+Generate and place these 5 images from Section 7 with exact alt text:
+
+Image 1: Technician inspecting Tulsa home's foundation/crawlspace, photorealistic
+
+Save as: /images/slab-leak-repair-tulsa-foundation-inspection.webp
+
+Image 2: Leak detection camera/electronic equipment in use, photorealistic
+
+Save as: /images/camera-verified-slab-leak-detection-tulsa.webp
+
+Image 3: Clean concrete slab patch post-repair, photorealistic
+
+Save as: /images/concrete-slab-leak-repair-tulsa.webp
+
+Image 4: Simple diagram graphic — trenchless vs traditional repair comparison
+
+Save as: /images/trenchless-slab-leak-repair-diagram.webp
+
+Image 5: Branded service vehicle or technician, photorealistic
+
+Save as: /images/licensed-tulsa-plumbers-slab-leak-team.webp
+
+PAGE 2 — tree-root-removal-sewer-line/index.html
+Use EXACTLY the content from tree-root-removal-sewer-line-page-package.md:
+
+Meta title, meta description, H1, all body content word for word
+All H2/H3 sections including 4 method subsections under "How We Remove Tree Roots"
+All 8 FAQ questions from Section 4
+CTA block from Section 8 — replace REPLACE-WITH-PHONE with (918) 992-4725
+
+Use the @graph schema from Section 5 BUT:
+
+Remove the entire aggregateRating block if present, and remove the telephone field
+Change image field to https://tulsaseweranddrain.com/images/logo.svg
+
+Internal links from Section 6 — but redirect this 1 since the page doesn't exist yet:
+
+"high-definition sewer camera" → /sewer-camera-inspection/
+"Hydro jetting" → /hydro-jetting/
+"trenchless liner" → /trenchless-sewer-repair-tulsa/
+"sewer line repair" → /sewer-line-repair/
+"flat-rate, upfront pricing" → remove this link, keep as plain text (pricing page doesn't exist yet)
+
+Generate and place these 5 images from Section 7 with exact alt text:
+
+Image 1: Cracked clay pipe with visible root mass, photorealistic
+
+Save as: /images/tree-roots-in-sewer-line-tulsa.webp
+
+Image 2: Infographic cross-section showing root entry through pipe joint
+
+Save as: /images/how-tree-roots-enter-sewer-pipes-diagram.webp
+
+Image 3: Before/after camera inspection still frames, photorealistic
+
+Save as: /images/sewer-camera-tree-root-removal-tulsa.webp
+
+Image 4: Technician operating hydro jetter, photorealistic
+
+Save as: /images/hydro-jetting-tree-roots-tulsa-sewer.webp
+
+Image 5: Yard photo showing lush/sunken patch warning sign, photorealistic
+
+Save as: /images/sewer-line-leak-warning-sign-yard-tulsa.webp
+
+FOR BOTH PAGES:
+
+Add both URLs to sitemap.xml with lastmod 2026-06-18:
+
+https://tulsaseweranddrain.com/slab-leak-repair-tulsa/
+
+https://tulsaseweranddrain.com/tree-root-removal-sewer-line/
+Add cross-links between these two pages — tree-root-removal-sewer-line should reference slab-leak-repair-tulsa where roots cause pipe cracks near a slab, and vice versa where relevant
+Add links FROM existing pages per each package's Section 6:
+
+sewer-line-repair/index.html: add "slab leak repair" and "tree roots in your sewer line" links
+sewer-camera-inspection/index.html: add "root intrusion" link to tree-root-removal-sewer-line
+hydro-jetting/index.html: add "clearing tree roots" link
+blog/clay-sewer-pipe-life-expectancy/ — skip, this blog post doesn't exist yet
+homepage: add "tree root removal" and "Slab Leak Repair" to services list
+broken-arrow-plumber, owasso-plumber, bixby-plumber, and other location pages: add "slab leak repair" link where mentioned
+
+
+
+These are sub-service pages — do not add them to the main Services nav dropdown, but link them naturally from related existing pages.
+All images width="100%" loading="lazy". Show confirmation of every file changed when done.
